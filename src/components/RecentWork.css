@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+.recent-work-section {
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recent-work-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.recent-work-subtitle {
+  color: #888;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.recent-work-description {
+  color: #888;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.work-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.work-cards {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.work-card {
+  flex: 0 0 calc(50% - 1rem);
+  opacity: 1;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.work-image-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.work-card:hover .work-image {
+  transform: scale(1.05);
+}
+
+.work-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.work-description {
+  color: #888;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.know-more-btn {
+  background: #4BB543;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background: #3d9235;
+}
+
+/* Remove carousel buttons */
+.carousel-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .recent-work-section {
+    padding: 3rem 1rem;
+  }
+
+  .recent-work-title {
+    font-size: 2.5rem;
+  }
+
+  .work-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .work-image-container {
+    height: 250px;
+  }
+} 

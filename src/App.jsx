@@ -2,10 +2,13 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import codeImg from './assets/profile.png'
 import TechStack from './components/TechStack'
+import Contact from './components/Contact'
+import RecentWork from './components/RecentWork'
 
 function App() {
   const [navOpen, setNavOpen] = useState(false)
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0)
+  const [activeSection, setActiveSection] = useState('home')
   
   const skills = [
     "Web Developer",
@@ -22,7 +25,57 @@ function App() {
     return () => clearInterval(interval)
   }, [])
 
-  const handleNavLinkClick = () => setNavOpen(false)
+  const handleNavLinkClick = (section, e) => {
+    e.preventDefault()
+    setActiveSection(section)
+    setNavOpen(false)
+  }
+  
+  const handleHomeClick = (e) => {
+    e.preventDefault()
+    setActiveSection('home')
+    setNavOpen(false)
+  }
+
+  const renderActiveSection = () => {
+    switch(activeSection) {
+      case 'contact':
+        return <Contact />
+      case 'recent-work':
+        return <RecentWork />
+      case 'home':
+      default:
+        return (
+          <>
+            <main className="hero-section">
+              <div className="hero-content">
+                <div className="hero-left">
+                  <h1 className="hero-title">
+                    Hi, I'm<br />
+                    <span className="name">Abhirup Roy</span>
+                    <br />
+                    <span className="skill-wrapper">
+                      <span className="skill-prefix">I'm a </span>
+                      <span className="animated-skill">{skills[currentSkillIndex]}</span>
+                    </span>
+                  </h1>
+                  <p className="hero-intro">
+                    Passionate front-end developer crafting beautiful, responsive web experiences. I blend creative design with clean code to build modern applications 
+                    that users love. Specialized in <b>React.js</b> and 
+                    committed to delivering pixel-perfect, performant solutions.
+                  </p>
+                  <button className="hero-btn">Let's get started</button>
+                </div>
+                <div className="hero-right">
+                  <img className="hero-img" src={codeImg} alt="Profile" />
+                </div>
+              </div>
+            </main>
+            <TechStack />
+          </>
+        )
+    }
+  }
 
   return (
     <div className="app-root">
@@ -40,11 +93,11 @@ function App() {
             <span></span>
           </div>
           <ul className={`nav-links${navOpen ? ' open' : ''}`}>
-            <li><a href="#" onClick={handleNavLinkClick}>Home</a></li>
-            <li><a href="#" onClick={handleNavLinkClick}>Projects</a></li>
-            <li><a href="#" onClick={handleNavLinkClick}>Skills</a></li>
-            <li><a href="#" onClick={handleNavLinkClick}>Recent work</a></li>
-            <li><a href="#" onClick={handleNavLinkClick}>Contact</a></li>
+            <li><a href="/" onClick={handleHomeClick}>Home</a></li>
+            <li><a href="#" onClick={(e) => handleNavLinkClick('projects', e)}>Projects</a></li>
+            <li><a href="#" onClick={(e) => handleNavLinkClick('skills', e)}>Skills</a></li>
+            <li><a href="#" onClick={(e) => handleNavLinkClick('recent-work', e)}>Recent work</a></li>
+            <li><a href="#" onClick={(e) => handleNavLinkClick('contact', e)}>Contact</a></li>
           </ul>
           <div className="nav-socials">
             <a href="https://www.linkedin.com/in/abhirup-roy-60ab95225/" aria-label="LinkedIn" className="nav-icon" target="_blank" rel="noopener noreferrer">
@@ -67,31 +120,7 @@ function App() {
           </div>
         </div>
       </nav>
-      <main className="hero-section">
-        <div className="hero-content">
-          <div className="hero-left">
-            <h1 className="hero-title">
-              Hi, I'm<br />
-              <span className="name">Abhirup Roy</span>
-              <br />
-              <span className="skill-wrapper">
-                <span className="skill-prefix">I'm a </span>
-                <span className="animated-skill">{skills[currentSkillIndex]}</span>
-              </span>
-            </h1>
-            <p className="hero-intro">
-              Passionate front-end developer crafting beautiful, responsive web experiences. I blend creative design with clean code to build modern applications 
-              that users love. Specialized in <b>React.js</b> and 
-              committed to delivering pixel-perfect, performant solutions.
-            </p>
-            <button className="hero-btn">Let's get started</button>
-          </div>
-          <div className="hero-right">
-            <img className="hero-img" src={codeImg} alt="Profile" />
-          </div>
-        </div>
-      </main>
-      <TechStack />
+      {renderActiveSection()}
       <div className="footer-content">
         <p className="footer-text">
           &copy; {new Date().getFullYear()} Abhirup Roy. All rights reserved.
