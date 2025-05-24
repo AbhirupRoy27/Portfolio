@@ -1,0 +1,87 @@
+.tech-section {
+  margin: 15px auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 32px 20px 32px;
+}
+
+.tech-label {
+  color: #bdbdbd;
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 0.04em;
+}
+
+.tech-logos {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.tech-logo-card {
+  background: transparent;
+  border: 2px solid #232323;
+  border-radius: 12px;
+  padding: 16px 24px 12px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  min-height: 70px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+}
+
+.tech-logo-card:hover {
+  border-color: #4BB543;
+  box-shadow: 0 0 16px #4BB54333;
+}
+
+.tech-logo-img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: grayscale(1) brightness(0.9);
+  opacity: 0.85;
+}
+
+.tech-logo-img.express-logo {
+  filter: invert(1) grayscale(1) brightness(2);
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.tech-logo-name {
+  color: #bdbdbd;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .tech-section {
+    margin: 30px auto;
+    padding: 0 0;
+  }
+  
+  .tech-logos {
+    gap: 14px;
+    justify-content: center;
+  }
+  
+  .tech-logo-card {
+    padding: 16px 12px 10px 12px;
+    min-width: 80px;
+  }
+  
+  .tech-logo-img {
+    width: 28px;
+    height: 28px;
+  }
+} 
