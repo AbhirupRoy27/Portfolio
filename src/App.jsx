@@ -37,6 +37,11 @@ function App() {
     setNavOpen(false)
   }
 
+  const handleHeroButtonClick = () => {
+    setActiveSection('contact')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   const renderActiveSection = () => {
     switch(activeSection) {
       case 'contact':
@@ -64,7 +69,7 @@ function App() {
                     that users love. Specialized in <b>React.js</b> and 
                     committed to delivering pixel-perfect, performant solutions.
                   </p>
-                  <button className="hero-btn">Let's get started</button>
+                  <button className="hero-btn" onClick={handleHeroButtonClick}>Let's get started</button>
                 </div>
                 <div className="hero-right">
                   <img className="hero-img" src={codeImg} alt="Profile" />
