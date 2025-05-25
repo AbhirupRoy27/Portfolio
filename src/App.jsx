@@ -4,6 +4,7 @@ import codeImg from './assets/profile.png'
 import TechStack from './components/TechStack'
 import Contact from './components/Contact'
 import RecentWork from './components/RecentWork'
+import Skills from './components/Skills'
 
 function App() {
   const [navOpen, setNavOpen] = useState(false)
@@ -48,6 +49,8 @@ function App() {
         return <Contact />
       case 'recent-work':
         return <RecentWork />
+      case 'skills':
+        return <Skills />
       case 'home':
       default:
         return (
