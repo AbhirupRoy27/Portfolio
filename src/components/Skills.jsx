@@ -136,7 +136,7 @@ const Skills = () => {
 
   return (
     <section className="skills-section">
-      <h1 className="skills-title">My Skills</h1>
+      <h1 className="skills-title">What I Bring to the Table</h1>
       <p className="skills-subtitle">
         Uncover the comprehensive skill set of my frontend development. From 
         foundational languages like JavaScript and TypeScript to cutting-edge frameworks.
