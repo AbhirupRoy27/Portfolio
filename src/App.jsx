@@ -14,15 +14,15 @@ function App() {
   const skills = [
     "Web Developer",
     "React Developer",
-    "UI/UX Designer",
     "Problem Solver",
-    "Tech Enthusiast"
+    "Quick Learner",
+    "Team Player"
   ]
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSkillIndex((prev) => (prev + 1) % skills.length)
-    }, 3000)
+    }, 2000)
     return () => clearInterval(interval)
   }, [])
 
@@ -41,6 +41,36 @@ function App() {
   const handleHeroButtonClick = () => {
     setActiveSection('contact')
     window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const handleDownloadCV = () => {
+    // Direct path to the PDF in public folder for Vite
+    const cvUrl = '/ABHIRUP_ROY_CV.pdf'
+    
+    // Fetch the PDF first to ensure it exists
+    fetch(cvUrl)
+      .then(response => response.blob())
+      .then(blob => {
+        // Create a blob URL
+        const blobUrl = window.URL.createObjectURL(blob)
+        
+        // Create a temporary link element
+        const link = document.createElement('a')
+        link.href = blobUrl
+        link.download = 'Abhirup_Roy_CV.pdf' // The name the file will be downloaded as
+        
+        // Append to document, click, and cleanup
+        document.body.appendChild(link)
+        link.click()
+        
+        // Cleanup
+        document.body.removeChild(link)
+        window.URL.revokeObjectURL(blobUrl)
+      })
+      .catch(error => {
+        console.error('Error downloading CV:', error)
+        alert('Error downloading CV. Please try again.')
+      })
   }
 
   const renderActiveSection = () => {
@@ -72,7 +102,17 @@ function App() {
                     that users love. Specialized in <b>React.js</b> and 
                     committed to delivering pixel-perfect, performant solutions.
                   </p>
-                  <button className="hero-btn" onClick={handleHeroButtonClick}>Let's get started</button>
+                  <div className="hero-buttons">
+                    <button className="hero-btn" onClick={handleHeroButtonClick}>Let's get started</button>
+                    <button className="hero-btn download-btn" onClick={handleDownloadCV}>
+                      <span>Download CV</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <div className="hero-right">
                   <img className="hero-img" src={codeImg} alt="Profile" />

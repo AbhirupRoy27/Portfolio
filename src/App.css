@@ -446,6 +446,12 @@ body {
   line-height: 1.6;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .hero-btn {
   background: #4BB543;
   color: #fff;
@@ -484,7 +490,7 @@ body {
 @media (max-width: 900px) {
   .hero-section {
     min-height: auto;
-    padding: 2rem 1rem;
+    padding: 0;
   }
 
   .hero-content {
@@ -520,13 +526,13 @@ body {
 
   .skill-prefix,
   .animated-skill {
-    font-size: 1.4rem;
+    font-size: 1.9rem;
   }
 
   .hero-intro {
     text-align: center;
-    font-size: 1rem;
-    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    margin: 1rem 0;
     padding: 0;
     line-height: 1.5;
   }
@@ -534,13 +540,14 @@ body {
   .hero-btn {
     font-size: 1rem;
     padding: 12px 32px;
-    margin: 0.5rem 0 1.5rem 0;
+    margin: 0.5rem 0 0.5rem 0;
   }
 
   .hero-right {
     width: 100%;
     justify-content: center;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
+    margin-bottom: 2rem;
   }
 
   .hero-img {
@@ -579,5 +586,43 @@ body {
   .navbar-content {
     max-width: 2080px;
     margin: 0 auto;
+  }
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--primary-color, #007bff);
+  color: var(--primary-color, #007bff);
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: var(--primary-color, #007bff);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.download-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.download-btn:hover svg {
+  transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .hero-btn {
+    width: 100%;
+    max-width: 300px;
   }
 }
