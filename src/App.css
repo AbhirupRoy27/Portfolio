@@ -368,10 +368,10 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
-  gap: 48px;
+  max-width: 1400px;
+  gap: 10rem;
   padding: 0 2rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .hero-left {
@@ -480,11 +480,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .hero-img {
-  width: 280px;
-  height: 280px;
+  width: 500px;
+  height: 500px;
   object-fit: contain;
   padding: 20px;
   border-radius: 30%;
@@ -494,7 +495,7 @@ body {
 
 @media (max-width: 900px) {
   .hero-section {
-    min-height: auto;
+    min-height: 95lvh;
     padding: 0;
   }
 

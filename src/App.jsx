@@ -125,6 +125,8 @@ function App() {
               </div>
             </main>
             <TechStack />
+            <Skills />
+            <Contact />
           </>
         )
     }
@@ -174,8 +176,7 @@ function App() {
         </div>
       </nav>
       {renderActiveSection()}
-      <Skills />
-      <Contact />
+      
       <div className="footer-content">
         <p className="footer-text">
           &copy; {new Date().getFullYear()} Abhirup Roy. All rights reserved.
