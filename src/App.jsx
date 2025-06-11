@@ -45,7 +45,7 @@ function App() {
 
   const handleDownloadCV = () => {
     // Direct path to the PDF in public folder for Vite
-    const cvUrl = '/ABHIRUP_ROY_CV.pdf'
+    const cvUrl = '/ABHIRUP_ROY_CV_1.pdf'
     
     // Fetch the PDF first to ensure it exists
     fetch(cvUrl)
