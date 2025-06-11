@@ -44,12 +44,17 @@ function App() {
   }
 
   const handleDownloadCV = () => {
-    // Direct path to the PDF in public folder for Vite
-    const cvUrl = '/ABHIRUP_ROY_CV_1.pdf'
+    // Use the correct file name with proper encoding for spaces
+    const cvUrl = '/ABHIRUP%20ROY%20SD.docx'
     
-    // Fetch the PDF first to ensure it exists
+    // Fetch the file first to ensure it exists
     fetch(cvUrl)
-      .then(response => response.blob())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('CV file not found')
+        }
+        return response.blob()
+      })
       .then(blob => {
         // Create a blob URL
         const blobUrl = window.URL.createObjectURL(blob)
@@ -57,7 +62,7 @@ function App() {
         // Create a temporary link element
         const link = document.createElement('a')
         link.href = blobUrl
-        link.download = 'Abhirup_Roy_CV.pdf' // The name the file will be downloaded as
+        link.download = 'Abhirup_Roy_CV.docx' // The name the file will be downloaded as
         
         // Append to document, click, and cleanup
         document.body.appendChild(link)
@@ -169,6 +174,8 @@ function App() {
         </div>
       </nav>
       {renderActiveSection()}
+      <Skills />
+      <Contact />
       <div className="footer-content">
         <p className="footer-text">
           &copy; {new Date().getFullYear()} Abhirup Roy. All rights reserved.

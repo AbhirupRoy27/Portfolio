@@ -2,6 +2,14 @@ import './TechStack.css'
 
 const techLogos = [
   {
+    name: 'MongoDB',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+  },
+  {
+    name: 'Express.js',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+  },
+  {
     name: 'React.js',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
   },
@@ -13,14 +21,7 @@ const techLogos = [
     name: 'Figma',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
   },
-  {
-    name: 'MongoDB',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
-  },
-  {
-    name: 'Express.js',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
-  },
+  
 ]
 
 const TechStack = () => {
