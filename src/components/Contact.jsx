@@ -26,7 +26,7 @@ const Contact = () => {
     <section className="contact-section">
       <h1 className="contact-title">Get In Touch</h1>
       <p className="contact-description">
-        Have a project in mind or want to discuss potential opportunities? I'm always excited 
+        <b>Have a project in mind or want to discuss potential opportunities? </b>I'm always excited 
         to collaborate on innovative web solutions. Whether you need a modern website, 
         a complex web application, or just want to say hello - drop me a message below!
       </p>

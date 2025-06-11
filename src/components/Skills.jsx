@@ -74,20 +74,20 @@ const Skills = () => {
       description: 'Creating adaptive layouts for all devices',
       category: 'styling'
     },
-    {
-      id: 11,
-      name: 'CSS Modules',
-      icon: 'CSSModules',
-      description: 'Scoped styling for React components',
-      category: 'styling'
-    },
-    {
-      id: 12,
-      name: 'VS Code',
-      icon: 'VSCode',
-      description: 'Advanced code editor for web development',
-      category: 'tools'
-    },
+    // {
+    //   id: 11,
+    //   name: 'CSS Modules',
+    //   icon: 'CSSModules',
+    //   description: 'Scoped styling for React components',
+    //   category: 'styling'
+    // },
+    // {
+    //   id: 12,
+    //   name: 'VS Code',
+    //   icon: 'VSCode',
+    //   description: 'Advanced code editor for web development',
+    //   category: 'tools'
+    // },
     {
       id: 13,
       name: 'Git',
@@ -158,7 +158,7 @@ const Skills = () => {
       </div>
 
       <div 
-        className="skills-grid"
+        className="skills-grid "
         role="tabpanel"
         id={`${activeCategory}-panel`}
         aria-label={`${activeCategory} skills`}
