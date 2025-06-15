@@ -126,6 +126,9 @@ function App() {
             </main>
             <TechStack />
             <Skills />
+            <div className="recent-work-bg">
+              <RecentWork />
+            </div>
             <Contact />
           </>
         )

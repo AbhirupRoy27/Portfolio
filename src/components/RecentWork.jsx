@@ -1,30 +1,31 @@
 import './RecentWork.css'
 
+
 const RecentWork = () => {
   const works = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      title: "Work name here",
-      description: "Labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna."
+      image: "/weather-app-demo.png",
+      title: "Weather App UI",
+      description: "A modern weather app interface with current and forecast data, responsive design, and clean UI. Built with React."
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-      title: "Work name here",
-      description: "Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u"
-    }
+      image: "/DTH-View.png",
+      title: "DTH Recharge Application",
+      description: "A DTH Recharge Application interface built with React. It allows users to recharge their DTH accounts and view their transaction history."
+    },
   ]
 
   return (
     <section className="recent-work-section">
       <h1 className="recent-work-title">Recent Work</h1>
       <p className="recent-work-subtitle">
-        Solving user & business problems since last 15+ years.
+        Efficiently Solving problems since last 3+ years.
       </p>
       <p className="recent-work-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        I'm a passionate developer who loves to solve problems and build things.
+         I'm a quick learner and I'm always looking for new challenges.
       </p>
 
       <div className="work-cards">

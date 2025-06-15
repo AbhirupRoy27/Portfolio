@@ -59,16 +59,17 @@
 
 .work-image-container {
   width: 100%;
-  height: 300px;
+  height: 288px;
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 1.5rem;
+  padding: 10px;
 }
 
 .work-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 

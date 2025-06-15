@@ -643,3 +643,14 @@ body {
   
   
 }
+
+.recent-work-bg {
+  background: #232323;
+  height: 900px;
+}
+
+@media (max-width: 770px) {
+  .recent-work-bg {
+    height: 1300px;
+  }
+}
