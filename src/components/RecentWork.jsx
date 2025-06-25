@@ -7,13 +7,17 @@ const RecentWork = () => {
       id: 1,
       image: "/weather-app-demo.png",
       title: "Weather App UI",
-      description: "A modern weather app interface with current and forecast data, responsive design, and clean UI. Built with React."
+      description: "A modern weather app interface with current and forecast data, responsive design, and clean UI. Built with React.",
+      link: "https://about-weather.netlify.app/",
+      target: "_blank"
     },
     {
       id: 2,
       image: "/DTH-View.png",
       title: "DTH Recharge Application",
-      description: "A DTH Recharge Application interface built with React. It allows users to recharge their DTH accounts and view their transaction history."
+      description: "A DTH Recharge Application interface built with React. It allows users to recharge their DTH accounts and view their transaction history.",
+      link: "about:blank",
+      target: "_parent"
     },
   ]
 
@@ -32,7 +36,13 @@ const RecentWork = () => {
         {works.map((work) => (
           <div key={work.id} className="work-card">
             <div className="work-image-container">
-              <img src={work.image} alt={work.title} className="work-image" />
+              <a href={work.link} target={work.target} rel="noopener noreferrer">
+                <img 
+                src={work.image} 
+                alt={work.title} 
+                className="work-image" 
+                />
+                </a>
             </div>
             <h2 className="work-title">{work.title}</h2>
             <p className="work-description">{work.description}</p>
