@@ -153,6 +153,7 @@ function App() {
           <ul className={`nav-links${navOpen ? ' open' : ''}`}>
             <li><a href="/" onClick={handleHomeClick}>Home</a></li>
             <li><a href="#" onClick={(e) => handleNavLinkClick('projects', e)}>Projects</a></li>
+            <li><a href="#" onClick={(e) => handleNavLinkClick('projects', e)}>Certifications</a></li>
             <li><a href="#" onClick={(e) => handleNavLinkClick('skills', e)}>Skills</a></li>
             <li><a href="#" onClick={(e) => handleNavLinkClick('recent-work', e)}>Recent work</a></li>
             <li><a href="#" onClick={(e) => handleNavLinkClick('contact', e)}>Contact</a></li>
