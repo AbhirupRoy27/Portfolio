@@ -16,8 +16,8 @@ const RecentWork = () => {
       image: "/DTH-View.png",
       title: "DTH Recharge Application",
       description: "A DTH Recharge Application interface built with React. It allows users to recharge their DTH accounts and view their transaction history.",
-      link: "about:blank",
-      target: "_parent"
+      link: "https://dthbro.netlify.app/",
+      target: "_blank"
     },
   ]
 
