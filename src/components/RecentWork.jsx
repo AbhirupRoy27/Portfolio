@@ -7,7 +7,7 @@ const RecentWork = () => {
       id: 1,
       image: "/weather-app-demo.png",
       title: "Weather App UI",
-      description: "A modern weather app interface with current and forecast data, responsive design, and clean UI. Built with React.",
+      description: "A modern weather app interface with current and forecast data, responsive design, and clean UI. Built with HTML, CSS and JS.",
       link: "https://about-weather.netlify.app/",
       target: "_blank"
     },

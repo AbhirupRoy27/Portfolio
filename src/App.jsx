@@ -6,6 +6,7 @@ import Contact from './components/Contact'
 import RecentWork from './components/RecentWork'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Work from './components/Certificates'
 
 function App() {
   const [navOpen, setNavOpen] = useState(false)
@@ -89,6 +90,8 @@ function App() {
         return <Skills />
       case 'Projects':
         return <Projects />
+      case 'progress':
+        return <Work />
       case 'home':
       default:
         return (
@@ -156,7 +159,7 @@ function App() {
           <ul className={`nav-links${navOpen ? ' open' : ''}`}>
             <li><a href="/" onClick={handleHomeClick}>Home</a></li>
             <li><a href="#" onClick={(e) => handleNavLinkClick('Projects', e)}>Projects</a></li>
-            <li><a href="#" onClick={(e) => handleNavLinkClick('Projects', e)}>Certifications</a></li>
+            <li><a href="#" onClick={(e) => handleNavLinkClick('progress', e)}>Certifications</a></li>
             <li><a href="#" onClick={(e) => handleNavLinkClick('skills', e)}>Skills</a></li>
             <li><a href="#" onClick={(e) => handleNavLinkClick('recent-work', e)}>Recent work</a></li>
             <li><a href="#" onClick={(e) => handleNavLinkClick('contact', e)}>Contact</a></li>
