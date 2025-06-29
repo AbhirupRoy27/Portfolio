@@ -27,7 +27,7 @@ A modern, responsive portfolio website built with React and Vite, showcasing my 
 
 ```bash
 # Clone the repository
-git clone https://github.com/YourUsername/portfolio.git
+git clone https://github.com/AbhirupRoy27/Portfolio.git
 
 # Navigate to project directory
 cd portfolio
