@@ -22,32 +22,6 @@ A modern, responsive portfolio website built with React and Vite, showcasing my 
 - **Interactive Elements:** Engaging user experience with hover effects and transitions
 - **Professional Layout:** Clear sections for projects, skills, and contact information
 
-## 🎯 Sections
-
-1. **Hero Section**
-   - Professional introduction
-   - Dynamic skill showcase
-   - Direct access to CV and contact information
-
-2. **Tech Stack**
-   - Comprehensive display of technical skills
-   - Interactive skill icons
-   - Modern visualization of expertise
-
-3. **Recent Work**
-   - Showcase of latest projects
-   - Live demos and code repositories
-   - Technical details and contributions
-
-4. **Skills**
-   - Detailed breakdown of technical capabilities
-   - Professional competencies
-   - Areas of expertise
-
-5. **Contact**
-   - Professional contact information
-   - Social media links
-   - Direct messaging capability
 
 ## 🔧 Installation & Setup
 
