@@ -9,22 +9,25 @@ const Projects = () => {
             description: "A weather app that allows you to search for weather information for any location in the world.",
             tags: ["UI/UX Design", "OpenWeather API", "React", "solo development"],
             image: "/weather-app-demo.png",
+            link: 'https://about-weather.netlify.app/',
             isComplete: true
         },
         {
             id: 2,
             name: "DTH Recharge Application",
             description: "A DTH recharge application that allows you to recharge your DTH account. It uses the Paytm API to process the payments.",
-            tags: ["Login/Register", "Payment", , "solo development"],
+            tags: ["Login/Register", "Payment",  "solo development"],
             image: "/DTH-View.png",
+            link: 'https://dthbro.netlify.app/',
             isComplete: true
         },
         {
             id: 3,
             name: "Cyberpunk To-Do List",
             description: "A to-do list that allows you to add, edit, and delete tasks. It uses local storage to save the tasks.",
-            tags: ["Game UI Design", "Local Storage", "Animation", "React", , "solo development"],
+            tags: ["Game UI Design", "Local Storage", "Animation", "React", "solo development"],
             image: "/To-do.png",
+            link: 'https://solo-levelingquests.netlify.app/',
             isComplete: true
         },
         {
@@ -33,6 +36,7 @@ const Projects = () => {
             description: "A e-commerce website that allows users to Experiance UI like Amazon.",
             tags: ["UI Clone", "Not Fully Functional", "Frontend-Only", "solo development"],
             image: "/E-com.png",
+            link: 'https://e-comwebui.netlify.app/',
             isComplete: true
         },
         {
@@ -58,8 +62,8 @@ const Projects = () => {
     // Filter only complete projects for second row
     const secondRowProjects = projects.slice(3).filter(project => project.isComplete)
 
-    const [currentIndexRow1, setCurrentIndexRow1] = useState(0)
-    const [currentIndexRow2, setCurrentIndexRow2] = useState(0)
+    const [currentIndexRow1, ] = useState(0)
+    const [currentIndexRow2, ] = useState(0)
 
     // const prevProject = () => {
     //     setCurrentIndex((prevIndex) => 
@@ -67,24 +71,28 @@ const Projects = () => {
     //     )
     // }
 
-    const ProjectRow = ({ projects, currentIndex, rowNumber }) => (
+    const ProjectRow = ({ projects, currentIndex,  }) => (
         <div className="projects-wrapper">
             {projects.map((project, index) => (
-                <div 
-                    key={project.id}
-                    className={`project-card ${index === currentIndex ? 'active' : ''}`}
-                >
-                    <div className="project-image" style={{ backgroundImage: `url(${project.image})` }}></div>
-                    <div className="project-content">
-                        <h2>{project.name}</h2>
-                        <p>{project.description}</p>
-                        <div className="project-tags">
-                            {project.tags.map((tag, i) => (
-                                <span key={i} className="tag">{tag}</span>
-                            ))}
-                        </div>
+                <a 
+                href={project.link} 
+                key={project.id}
+                className={`project-card ${index === currentIndex ? 'active' : ''}`}
+                style={{ textDecoration: 'none', color: 'inherit' }}
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                <div className="project-image" style={{ backgroundImage: `url(${project.image})` }}></div>
+                <div className="project-content">
+                    <h2>{project.name}</h2>
+                    <p>{project.description}</p>
+                    <div className="project-tags">
+                        {project.tags.map((tag, i) => (
+                            <span key={i} className="tag">{tag}</span>
+                        ))}
                     </div>
                 </div>
+            </a>
             ))}
         </div>
     )

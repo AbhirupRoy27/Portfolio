@@ -47,7 +47,7 @@ function App() {
 
   const handleDownloadCV = () => {
     // Use the correct file name with proper encoding for spaces
-    const cvUrl = '/ABHIRUP%20ROY%20SD.docx'
+    const cvUrl = '/AbhirupRoyCV.pdf'
     
     // Fetch the file first to ensure it exists
     fetch(cvUrl)
@@ -64,7 +64,7 @@ function App() {
         // Create a temporary link element
         const link = document.createElement('a')
         link.href = blobUrl
-        link.download = 'Abhirup_Roy_CV.docx' // The name the file will be downloaded as
+        link.download = 'Abhirup_Roy_CV.pdf' // The name the file will be downloaded as
         
         // Append to document, click, and cleanup
         document.body.appendChild(link)
