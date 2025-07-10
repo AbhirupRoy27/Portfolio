@@ -3,11 +3,18 @@
 }
 
 .tech-section {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  background: #062b38;
+  background: linear-gradient(90deg, rgba(6, 43, 56, 1) 0%, rgba(0, 17, 43, 1) 50%, rgba(16, 1, 46, 1) 100%);margin: 0 auto;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .tech-section{
+    padding: 3rem 1rem;
+  }
+  
 }
 
 .tech-label {
@@ -43,7 +50,7 @@
 .tech-logo-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(75, 181, 67, 0.2);
-  border: 1px solid #4BB543;
+  border: 1px solid #062c45;
 }
 
 .tech-logo-img {
@@ -70,9 +77,9 @@
 }
 
 @media (max-width: 768px) {
-  .tech-section {
+  /* .tech-section {
     padding: 3rem 1rem;
-  }
+  } */
 
   .tech-label {
     font-size: 2rem;
