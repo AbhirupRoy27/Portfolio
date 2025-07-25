@@ -15,13 +15,13 @@
     background: linear-gradient(140deg,rgba(13, 13, 13, 1) 0%, rgba(44, 22, 92, 1) 100%);
 }
 
-.Project-box h1 {
+/* .Project-box h1 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     font-style: italic;
     color: #676767;
     text-shadow: 10px 10px 20px rgba(13, 13, 13, 1)
-}
+} */
 
 .Project-display {
     display: flex;
