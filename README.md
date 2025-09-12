@@ -22,7 +22,6 @@ A modern, responsive portfolio website built with React and Vite, showcasing my 
 - **Interactive Elements:** Engaging user experience with hover effects and transitions
 - **Professional Layout:** Clear sections for projects, skills, and contact information
 
-
 ## 🔧 Installation & Setup
 
 ```bash
@@ -37,9 +36,6 @@ npm install
 
 # Start development server
 npm run dev
-
-# Build for production
-npm run build
 ```
 
 ## 🌟 Professional Background
@@ -52,6 +48,7 @@ npm run build
 ## 📱 Responsive Design
 
 The portfolio is fully responsive and tested across multiple devices and browsers:
+
 - Desktop (1920px and down)
 - Tablet (1024px and down)
 - Mobile (768px and down)
@@ -62,9 +59,6 @@ The portfolio is fully responsive and tested across multiple devices and browser
 - [GitHub](https://github.com/AbhirupRoy27/AbhirupRoy27)
 - [LeetCode](https://leetcode.com/u/abhirupRoy27/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
 ---
-*Built with ❤️ by Abhirup Roy*
+
+_Built with ❤️ by Abhirup Roy_

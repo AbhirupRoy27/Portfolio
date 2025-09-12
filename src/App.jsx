@@ -26,7 +26,7 @@ function App() {
       setCurrentSkillIndex((prev) => (prev + 1) % skills.length)
     }, 2000)
     return () => clearInterval(interval)
-  }, [])
+  }, [skills.length])
 
   const handleNavLinkClick = (section, e) => {
     e.preventDefault()

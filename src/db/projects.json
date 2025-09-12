@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "About Weather",
+    "description": "A weather app that allows you to search for weather information for any location in the world.",
+    "tags": [
+      "UI/UX Design",
+      "OpenWeather API",
+      "React",
+      "solo development"
+    ],
+    "image": "/weather-app-demo.png",
+    "link": "https://about-weather.netlify.app/",
+    "isComplete": true
+  },
+  {
+    "id": 2,
+    "name": "DTH Recharge Application",
+    "description": "A DTH recharge application that allows you to recharge your DTH account. It uses the Paytm API to process the payments.",
+    "tags": [
+      "Login/Register",
+      "Payment",
+      "Personal Project"
+    ],
+    "image": "/DTH-View.png",
+    "link": "https://dthbro.netlify.app/",
+    "isComplete": true
+  },
+  {
+    "id": 3,
+    "name": "Cyberpunk To-Do List",
+    "description": "A to-do list that allows you to add, edit, and delete tasks. It uses local storage to save the tasks.",
+    "tags": [
+      "Game UI Design",
+      "Local Storage",
+      "Animation",
+      "React",
+      "solo development"
+    ],
+    "image": "/To-do.png",
+    "link": "https://solo-levelingquests.netlify.app/",
+    "isComplete": true
+  },
+  {
+    "id": 4,
+    "name": "E-Commerce UI Clone",
+    "description": "A e-commerce website that allows users to Experiance UI like Amazon.",
+    "tags": [
+      "UI Clone",
+      "Not Fully Functional",
+      "Frontend-Only",
+      "solo development"
+    ],
+    "image": "/E-com.png",
+    "link": "https://e-comwebui.netlify.app/",
+    "isComplete": true
+  }
+]
