@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "link": "Home",
+    "path": "/",
+    "handle": ""
+  },
+  {
+    "id": 2,
+    "link": "Projects",
+    "path": "#",
+    "handle": "Projects"
+  },
+  {
+    "id": 3,
+    "link": "Skills",
+    "path": "#",
+    "handle": "skills"
+  },
+  {
+    "id": 4,
+    "link": "Recent work",
+    "path": "#",
+    "handle": "recent-work"
+  },
+  {
+    "id": 5,
+    "link": "Contact",
+    "path": "#",
+    "handle": "contact"
+  }
+]
