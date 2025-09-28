@@ -25,7 +25,7 @@ function App() {
     switch (activeSection) {
       case 'contact':
         return (
-          <Suspense fallback={<h1 className="p-[1%]">Loading...</h1>}>
+          <Suspense fallback={<h1 className="p-1">Loading...</h1>}>
             <Contact />
           </Suspense>
         )
@@ -39,7 +39,7 @@ function App() {
       default:
         return (
           <>
-            <Suspense fallback={<h1 className="p-[1%]">Loading...</h1>}>
+            <Suspense fallback={<h1 className="p-1">Loading...</h1>}>
               <Homepage setActiveSection={setActiveSection} />
             </Suspense>
             <TechStack />
@@ -69,7 +69,7 @@ function App() {
           </div>
           <ul className={`nav-links${navOpen ? ' open' : ''}`}>
             {Navlinks.map((link) => (
-              <li style={{ marginRight: 10 }} key={link.id}>
+              <li key={link.id}>
                 <button
                   href={link.path}
                   onClick={() => handleNavLinkClick(`${link.handle}`)}

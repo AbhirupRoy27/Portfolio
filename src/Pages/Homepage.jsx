@@ -10,12 +10,13 @@ function Homepage({ setActiveSection }) {
     'Problem Solver',
     'Quick Learner',
     'Team Player',
+    'Full Stack Developer',
   ]
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSkillIndex((prev) => (prev + 1) % skills.length)
-    }, 2000)
+    }, 4000)
     return () => clearInterval(interval)
   }, [skills.length])
 
@@ -63,17 +64,12 @@ function Homepage({ setActiveSection }) {
     <main className="hero-section">
       <div className="hero-content">
         <div className="hero-left">
+          <h1 className="">
+            Hi, I'm<span className="name">Abhirup Roy</span>
+          </h1>
           <h1 className="hero-title">
-            Hi, I'm
-            <br />
-            <span className="name">Abhirup Roy</span>
-            <br />
-            <span className="skill-wrapper">
-              <span className="skill-prefix">I'm a </span>
-              <span className="animated-skill">
-                {skills[currentSkillIndex]}
-              </span>
-            </span>
+            <span className="skill-prefix">I'm a </span>
+            <span className="animated-skill">{skills[currentSkillIndex]}</span>
           </h1>
           <p className="hero-intro">
             Passionate front-end developer crafting beautiful, responsive web
