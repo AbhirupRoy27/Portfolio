@@ -21,7 +21,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="px-[1rem] py-[2rem] bg-[#333] sm:bg-[#101010] flex flex-col justify-around items-center sm:max-w-[60%] mt-25 sm:mt-15">
+    <section className="px-[1rem] py-[2rem] bg-[#333] sm:bg-[#101010] flex flex-col justify-around items-center sm:max-w-[60%] mt-15">
       <h1 className="text-2xl sm:text-4xl tracking-wide px-2 py-[2rem] font-bold">
         Have a project in mind?
       </h1>

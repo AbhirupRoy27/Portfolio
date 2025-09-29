@@ -5,6 +5,7 @@ import Skills from './components/Skills/Skills'
 import Projects from './components/Project/Projects'
 import Navlinks from './db/navlinks.json'
 import Homepage from './Pages/Homepage'
+import './App.css'
 
 const Footer = lazy(() => import('./components/Footer/index'))
 const NavLogos = lazy(() => import('./components/NavLogos/index'))
@@ -25,7 +26,7 @@ function App() {
       case 'contact':
         return (
           <Suspense fallback={<h1 className="p-1">Loading...</h1>}>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center mb-20 lg:mb-40">
               <Contact />
             </div>
           </Suspense>
@@ -54,11 +55,11 @@ function App() {
   }
 
   return (
-    <div className="app-root">
-      <nav className="navbar">
-        <div className="navbar-content">
+    <div className=" bg-[#101010] flex flex-col">
+      <nav className="navbar bg-[#232323] sticky p[1%] top-0 left-0 z-[100] flex justify-center items-center">
+        <div className="navbar-content w-full flex items-center">
           <div
-            className={`hamburger${navOpen ? ' open' : ''}`}
+            className={`hamburger${navOpen ? ' open' : ''} `}
             onClick={() => setNavOpen(!navOpen)}
             aria-label="Toggle navigation"
             tabIndex={0}
@@ -68,12 +69,17 @@ function App() {
             <span></span>
             <span></span>
           </div>
-          <ul className={`nav-links${navOpen ? ' open' : ''}`}>
+          <ul
+            className={`nav-links${
+              navOpen ? ' open' : ''
+            } lg:flex lg:ml-10 lg:gap-10`}
+          >
             {Navlinks.map((link) => (
-              <li key={link.id}>
+              <li key={link.id} className="flex items-center justify-center">
                 <button
                   href={link.path}
                   onClick={() => handleNavLinkClick(`${link.handle}`)}
+                  className="text-[#bdbdbd] text-xl tracking-wide py-8 px-2 font-bold duration-300 hover:scale-104 hover:text-shadow-md/30 "
                 >
                   {link.link}
                 </button>

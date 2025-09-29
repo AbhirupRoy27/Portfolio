@@ -79,7 +79,7 @@ function Homepage({ setActiveSection }) {
         </div>
         <div className="flex sm:h-full justify-center rounded-md lg:rounded-full lg:hover:p-4 duration-300 w-full sm:w-[50%] lg:shadow-xl lg:shadow-white/30 m-10">
           <img
-            className="rounded-md lg:rounded-full shadow-xl shadow-black/30"
+            className="rounded-md lg:rounded-full lg:shadow-xl lg:shadow-black/30 "
             src="https://res.cloudinary.com/ddu1fpkrw/image/upload/v1759126014/profile_ucj6m8.png"
             alt="Profile"
             title="Photo Abhirup Roy"

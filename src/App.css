@@ -1,11 +1,5 @@
 /* App Layout */
-.app-root {
-  width: 100%;
-  min-height: 100vh;
-  background: #101010;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .main-content {
   flex: 1;
@@ -15,18 +9,6 @@
 
 /* Navigation */
 .navbar {
-  width: 100%;
-  background: #232323;
-  padding: 1%;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.04);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80px;
   transform: translateX(0);
 }
 
@@ -38,40 +20,10 @@
   height: 100%;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 28px;
-  height: 100%;
-  align-items: center;
-}
 
-.nav-links li {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.nav-links li button {
-  color: #bdbdbd;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  transition: color 0.2s;
-  padding: 8px 16px;
-  border: 0;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  background-color: transparent;
-}
 
-.nav-links li button:active {
-  scale: 105%;
-}
+
 
 .nav-links li button:hover {
   color: white;
@@ -170,15 +122,6 @@
   }
 }
 
-.hero-intro {
-  width: 100%;
-  color: #bdbdbd;
-  margin-bottom: 36px;
-  max-width: 100rem;
-  text-align: left;
-
-}
-
 .hero-buttons {
   display: flex;
   gap: 1rem;
@@ -262,15 +205,6 @@
   height: 900px;
 }
 
-/* Responsive Styles */
-@media (max-width: 1380px) {
-
-  .hero-right {
-    clip-path: none;
-  }
-
-
-}
 
 @media (max-width: 1000px) {
   .hero-content {
@@ -289,24 +223,6 @@
 }
 
 @media (max-width: 900px) {
-  .hero-section {
-    min-height: 95lvh;
-    padding: 0;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0 1rem;
-    margin-top: 2rem;
-  }
-
-  .hero-left {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-  }
 
   .skill-wrapper {
     height: 40px;
@@ -327,11 +243,7 @@
     margin: 0.5rem 0 0.5rem 0;
   }
 
-  .hero-right {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
+
 }
 
 @media (max-width: 700px) {
@@ -447,50 +359,12 @@
 }
 
 
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 1.8rem;
-  }
 
 
-  .skill-prefix {
-    font-size: 1.2rem;
-  }
 
-  .hero-intro {
-    font-size: 0.95rem;
-  }
-
-  .hero-section {
-    padding: 1rem 0.5rem;
-  }
-}
-
-@media (min-width: 701px) and (max-width: 1200px) {
-  .hero-left {
-    margin-left: 0;
-  }
-
-  .navbar-content {
-    padding: 0 2rem;
-  }
-}
-
-@media (max-width: 1400px) {
-  .hero-left {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 770px) {
-  .recent-work-bg {
-    height: 1300px;
-  }
-}
 
 @media (min-width: 2081px) {
 
-  .hero-content,
   .navbar-content {
     max-width: 2080px;
     margin: 0 auto;
