@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 /* Root and Body Styles */
 #root {
   width: 100vw;
