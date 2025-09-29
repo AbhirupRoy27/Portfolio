@@ -26,7 +26,9 @@ function App() {
       case 'contact':
         return (
           <Suspense fallback={<h1 className="p-1">Loading...</h1>}>
-            <Contact />
+            <div className="flex justify-center items-center">
+              <Contact />
+            </div>
           </Suspense>
         )
       case 'recent-work':

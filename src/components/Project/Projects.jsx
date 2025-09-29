@@ -56,9 +56,7 @@ const Projects = () => {
     <div className="projects-container">
       <div className="projects-header">
         <h1>Works Done By Me</h1>
-        <Suspense fallback={<h2>Loading...</h2>}>
-          <Info />
-        </Suspense>
+        <Info />
       </div>
 
       <div className="projects-main-carousel">
