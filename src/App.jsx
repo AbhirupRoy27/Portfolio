@@ -1,4 +1,3 @@
-import './App.css'
 import { useState, lazy, Suspense } from 'react'
 import TechStack from './components/TechStack/TechStack'
 import RecentWork from './components/Recentwork/RecentWork'

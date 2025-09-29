@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { handleDownloadCV } from './pageUtils/handleDownload'
 
 function Homepage({ setActiveSection }) {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0)
@@ -21,60 +22,33 @@ function Homepage({ setActiveSection }) {
 
   const handleHeroButtonClick = () => {
     setActiveSection('contact')
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
-  const handleDownloadCV = () => {
-    // Use the correct file name with proper encoding for spaces
-    const cvUrl = '/AbhirupRoyCV.pdf'
-
-    // Fetch the file first to ensure it exists
-    fetch(cvUrl)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('CV file not found')
-        }
-        return response.blob()
-      })
-      .then((blob) => {
-        // Create a blob URL
-        const blobUrl = window.URL.createObjectURL(blob)
-
-        // Create a temporary link element
-        const link = document.createElement('a')
-        link.href = blobUrl
-        link.download = 'Abhirup_Roy_CV.pdf' // The name the file will be downloaded as
-
-        // Append to document, click, and cleanup
-        document.body.appendChild(link)
-        link.click()
-
-        // Cleanup
-        document.body.removeChild(link)
-        window.URL.revokeObjectURL(blobUrl)
-      })
-      .catch((error) => {
-        console.error('Error downloading CV:', error)
-        alert('Error downloading CV. Please try again.')
-      })
   }
 
   return (
-    <main className="hero-section">
-      <div className="hero-content">
-        <div className="hero-left">
-          <h1 className="">
-            Hi, I'm<span className="name">Abhirup Roy</span>
+    <main className="bg-gradient-to-r from-slate-900 to-slate-700 mb-2">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-2 sm:p-[2%] w-full">
+        <div className="mt-10 w-full lg:w-[50%] px-[4%]">
+          <h1 className="text-3xl p-3 lg:text-left">
+            Hi, I'm
+            <span className="text-3xl lg:text-5xl tracking-wide px-3 text-green-600 font-bold">
+              Abhirup Roy
+            </span>
           </h1>
-          <h1 className="hero-title">
+          <h1 className="flex justify-center lg:justify-start items-center py-3 px-2 text-2xl gap-2">
             <span className="skill-prefix">I'm a </span>
-            <span className="animated-skill">{skills[currentSkillIndex]}</span>
+            <span className="animated-skill font-bold ">
+              {skills[currentSkillIndex]}
+            </span>
           </h1>
-          <p className="hero-intro">
-            Passionate front-end developer crafting beautiful, responsive web
-            experiences. I blend creative design with clean code to build modern
-            applications that users love. Specialized in <b>React.js</b> and
-            committed to delivering pixel-perfect, performant solutions.
+          <p
+            className="text-xl lg:text-2xl lg:text-start my-6 text-gray-400"
+            title="About Abhirup Roy"
+          >
+            Passionate <b className="text-gray-200">Full stack dev</b> crafting
+            beautiful, responsive web experiences. I blend projects with clean
+            and easy to maintain codebase to build modern applications that
+            helps prople. Specialized and committed to delivering pixel-perfect,
+            performant solutions.
           </p>
           <div className="hero-buttons">
             <button className="hero-btn" onClick={handleHeroButtonClick}>
@@ -103,11 +77,12 @@ function Homepage({ setActiveSection }) {
             </button>
           </div>
         </div>
-        <div className="hero-right">
+        <div className="flex sm:h-full justify-center rounded-md lg:rounded-full lg:hover:p-4 duration-300 w-full sm:w-[50%] lg:shadow-xl lg:shadow-white/30 m-10">
           <img
-            className="hero-img"
+            className="rounded-md lg:rounded-full shadow-xl shadow-black/30"
             src="https://res.cloudinary.com/ddu1fpkrw/image/upload/v1759126014/profile_ucj6m8.png"
             alt="Profile"
+            title="Photo Abhirup Roy"
           />
         </div>
       </div>
