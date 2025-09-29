@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import codeImg from '../assets/profile.png'
 
 function Homepage({ setActiveSection }) {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0)
@@ -105,7 +104,11 @@ function Homepage({ setActiveSection }) {
           </div>
         </div>
         <div className="hero-right">
-          <img className="hero-img" src={codeImg} alt="Profile" />
+          <img
+            className="hero-img"
+            src="https://res.cloudinary.com/ddu1fpkrw/image/upload/v1759126014/profile_ucj6m8.png"
+            alt="Profile"
+          />
         </div>
       </div>
     </main>
