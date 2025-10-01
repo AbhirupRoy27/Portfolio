@@ -1,32 +1,5 @@
-.tech-section {
-  padding: 5rem 2rem;
-  width: 100%;
-  background: #062b38;
-  background: linear-gradient(90deg, rgba(6, 43, 56, 1) 0%, rgba(0, 17, 43, 1) 50%, rgba(16, 1, 46, 1) 100%);
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media (max-width: 900px) {
-  .tech-section {
-    padding: 3rem 1rem;
-  }
-
-}
-
-.tech-label {
-  color: white;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  font-weight: bold;
-}
-
 .tech-logos {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  gap: 0.8rem;
   width: 100%;
 }
 
@@ -74,15 +47,6 @@
 }
 
 @media (max-width: 768px) {
-  /* .tech-section {
-    padding: 3rem 1rem;
-  } */
-
-  .tech-label {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
   .tech-logos {
     gap: 1rem;
   }

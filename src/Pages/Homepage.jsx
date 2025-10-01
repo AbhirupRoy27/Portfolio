@@ -26,15 +26,15 @@ function Homepage({ setActiveSection }) {
 
   return (
     <main className="bg-gradient-to-r from-slate-900 to-slate-700 mb-2">
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-2 sm:p-[2%] w-full">
-        <div className="mt-10 w-full lg:w-[50%] px-[4%]">
-          <h1 className="text-3xl p-3 lg:text-left">
+      <div className="flex flex-col xl:flex-row justify-center items-center gap-2 sm:p-[1.5%] w-full lg:h-[92vh]">
+        <div className="mt-10 w-full xl:w-[50%] px-[4%]">
+          <h1 className="text-3xl p-3 xl:text-left">
             Hi, I'm
             <span className="text-3xl lg:text-5xl tracking-wide px-3 text-green-600 font-bold">
               Abhirup Roy
             </span>
           </h1>
-          <h1 className="flex justify-center lg:justify-start items-center py-3 px-2 text-2xl gap-2">
+          <h1 className="flex justify-center xl:justify-start items-center py-3 px-2 text-2xl gap-2">
             <span className="skill-prefix">I'm a </span>
             <span className="animated-skill font-bold ">
               {skills[currentSkillIndex]}
@@ -45,10 +45,10 @@ function Homepage({ setActiveSection }) {
             title="About Abhirup Roy"
           >
             Passionate <b className="text-gray-200">Full stack dev</b> crafting
-            beautiful, responsive web experiences. I blend projects with clean
-            and easy to maintain codebase to build modern applications that
-            helps prople. Specialized and committed to delivering pixel-perfect,
-            performant solutions.
+            beautiful, responsive web experiences for the users. I blend
+            projects with clean and easy to maintain codebase to build modern
+            applications that helps prople. Specialized and committed to
+            delivering pixel-perfect, performant solutions.
           </p>
           <div className="hero-buttons">
             <button className="hero-btn" onClick={handleHeroButtonClick}>
@@ -77,7 +77,7 @@ function Homepage({ setActiveSection }) {
             </button>
           </div>
         </div>
-        <div className="flex sm:h-full justify-center rounded-md lg:rounded-full lg:hover:p-4 duration-300 w-full sm:w-[50%] lg:shadow-xl lg:shadow-white/30 m-10">
+        <div className="flex justify-center rounded-md lg:rounded-full p-15 sm:p-4 lg:p-0 lg:hover:p-4 duration-300 w-full sm:w-[50%] lg:shadow-xl lg:shadow-white/30">
           <img
             className="rounded-md lg:rounded-full lg:shadow-xl lg:shadow-black/30 "
             src="https://res.cloudinary.com/ddu1fpkrw/image/upload/v1759126014/profile_ucj6m8.png"

@@ -1,8 +1,6 @@
-import React from 'react'
-
 function NavLogos() {
   return (
-    <div className="nav-socials">
+    <div className="nav-socials p-2 mr-4">
       <a
         href="https://www.linkedin.com/in/abhirup-roy-60ab95225/"
         aria-label="LinkedIn"

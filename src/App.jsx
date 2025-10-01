@@ -72,14 +72,14 @@ function App() {
           <ul
             className={`nav-links${
               navOpen ? ' open' : ''
-            } lg:flex lg:ml-10 lg:gap-10`}
+            } lg:flex xl:ml-10 sm:gap-6 lg:gap-10`}
           >
             {Navlinks.map((link) => (
               <li key={link.id} className="flex items-center justify-center">
                 <button
                   href={link.path}
                   onClick={() => handleNavLinkClick(`${link.handle}`)}
-                  className="text-[#bdbdbd] text-xl tracking-wide py-8 px-2 font-bold duration-300 hover:scale-104 hover:text-shadow-md/30 "
+                  className="text-[#bdbdbd] text-xl tracking-wide py-6 px-2 font-bold duration-300 hover:scale-104 hover:text-shadow-md/30 "
                 >
                   {link.link}
                 </button>

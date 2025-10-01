@@ -1,6 +1,3 @@
-/* App Layout */
-
-
 .main-content {
   flex: 1;
   display: flex;
@@ -19,11 +16,6 @@
   align-items: center;
   height: 100%;
 }
-
-
-
-
-
 
 .nav-links li button:hover {
   color: white;
@@ -124,6 +116,7 @@
 
 .hero-buttons {
   display: flex;
+  justify-content: start;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -206,11 +199,7 @@
 }
 
 
-@media (max-width: 1000px) {
-  .hero-content {
-    gap: 2rem;
-  }
-
+@media (max-width: 1280px) {
   .hero-buttons {
     justify-content: center;
     width: 100%;
@@ -223,7 +212,6 @@
 }
 
 @media (max-width: 900px) {
-
   .skill-wrapper {
     height: 40px;
     margin-top: 0.5rem;
@@ -242,11 +230,9 @@
     padding: 12px 32px;
     margin: 0.5rem 0 0.5rem 0;
   }
-
-
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1280px) {
   .navbar {
     min-height: 60px;
   }
