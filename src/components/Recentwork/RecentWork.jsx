@@ -1,23 +1,25 @@
 import './RecentWork.css'
 
-
 const RecentWork = () => {
   const works = [
     {
       id: 1,
-      image: "/weather-app-demo.png",
-      title: "Weather App UI",
-      description: "A modern weather app interface with current and forecast data, responsive design, and clean UI. Built with HTML, CSS and JS.",
-      link: "https://about-weather.netlify.app/",
-      target: "_blank"
+      image:
+        'https://res.cloudinary.com/ddu1fpkrw/image/upload/v1759389659/Screenshot_2025-10-02_at_12.46.14_PM_npmfad.png',
+      title: 'E-commerce Application',
+      description:
+        'A modern E-commerce Store app build with React and node.js framworks, Mobile first design with tailwind CSS for an clean UI. state managemant using Context API ',
+      link: 'https://abhisecomnew.netlify.app/',
+      target: '_blank',
     },
     {
       id: 2,
-      image: "/DTH-View.png",
-      title: "DTH Recharge Application",
-      description: "A DTH Recharge Application interface built with React. It allows users to recharge their DTH accounts and view their transaction history.",
-      link: "https://dthbro.netlify.app/",
-      target: "_blank"
+      image: '/DTH-View.png',
+      title: 'DTH Recharge Application',
+      description:
+        'A DTH Recharge Application interface built with React. It allows users to recharge their DTH accounts and view their transaction history.',
+      link: 'https://dthbro.netlify.app/',
+      target: '_blank',
     },
   ]
 
@@ -25,24 +27,25 @@ const RecentWork = () => {
     <section className="recent-work-section">
       <h1 className="recent-work-title">Recent Work</h1>
       <p className="recent-work-subtitle">
-        Efficiently Solving problems since last 3+ years.
+        Continuously enhancing my knowledge with every passing moment.
       </p>
       <p className="recent-work-description">
-        I'm a passionate developer who loves to solve problems and build things.
-         I'm a quick learner and I'm always looking for new challenges.
+        Passionate developer with a strong drive for problem-solving and
+        building impactful solutions. A quick learner who thrives on new
+        challenges and continuously seeks opportunities to grow.
       </p>
 
       <div className="work-cards">
         {works.map((work) => (
           <div key={work.id} className="work-card">
             <div className="work-image-container">
-              <a href={work.link} target={work.target} rel="noopener noreferrer">
-                <img 
-                src={work.image} 
-                alt={work.title} 
-                className="work-image" 
-                />
-                </a>
+              <a
+                href={work.link}
+                target={work.target}
+                rel="noopener noreferrer"
+              >
+                <img src={work.image} alt={work.title} className="work-image" />
+              </a>
             </div>
             <h2 className="work-title">{work.title}</h2>
             <p className="work-description">{work.description}</p>
@@ -53,4 +56,4 @@ const RecentWork = () => {
   )
 }
 
-export default RecentWork 
+export default RecentWork

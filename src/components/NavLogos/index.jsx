@@ -25,7 +25,7 @@ function NavLogos() {
         </svg>
       </a>
       <a
-        href="https://github.com/AbhirupRoy27/AbhirupRoy27"
+        href="https://github.com/AbhirupRoy27"
         aria-label="GitHub"
         className="nav-icon"
         target="_blank"

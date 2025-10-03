@@ -45,8 +45,8 @@ function App() {
               <Homepage setActiveSection={setActiveSection} />
             </Suspense>
             <TechStack />
-            <Skills />
-            <div className="recent-work-bg">
+            {/* <Skills /> */}
+            <div className="bg-gradient-to-br from-slate-900 to-slate-700  mt-2">
               <RecentWork />
             </div>
           </>

@@ -17,10 +17,6 @@ const techLogos = [
     name: 'Node.js',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
   },
-  // {
-  //   name: 'Figma',
-  //   src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
-  // },
 ]
 
 const TechStack = () => {

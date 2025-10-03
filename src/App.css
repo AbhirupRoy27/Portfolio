@@ -194,7 +194,6 @@
 
 /* Recent Work Background */
 .recent-work-bg {
-  background: #232323;
   height: 900px;
 }
 
@@ -343,11 +342,6 @@
     transform: translateY(-2px);
   }
 }
-
-
-
-
-
 
 @media (min-width: 2081px) {
 
