@@ -5,8 +5,8 @@ const RecentWork = () => {
     {
       id: 1,
       image:
-        'https://res.cloudinary.com/ddu1fpkrw/image/upload/v1759389659/Screenshot_2025-10-02_at_12.46.14_PM_npmfad.png',
-      title: 'E-commerce Application',
+        'https://res.cloudinary.com/ddu1fpkrw/image/upload/v1761577912/Next_gen_beykr5.png',
+      title: 'NextGen: E-commerce App',
       description:
         'A modern E-commerce Store app build with React and node.js framworks, Mobile first design with tailwind CSS for an clean UI. state managemant using Context API ',
       link: 'https://abhisecomnew.netlify.app/',

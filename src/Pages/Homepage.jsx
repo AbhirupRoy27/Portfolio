@@ -44,10 +44,10 @@ function Homepage({ setActiveSection }) {
             className="text-xl lg:text-2xl lg:text-start my-6 text-gray-400"
             title="About Abhirup Roy"
           >
-            Passionate <b className="text-gray-200">Full stack dev</b> crafting
-            beautiful, responsive web experiences for the users. I blend
-            projects with clean and easy to maintain codebase to build modern
-            applications that helps prople. Specialized and committed to
+            A passionate <b className="text-gray-200">Full stack dev</b>{' '}
+            crafting beautiful, responsive web experiences. I blend projects
+            with clean and easy to maintain codebase to build modern
+            applications that build on MERN Stack. Specialized and committed to
             delivering pixel-perfect, performant solutions.
           </p>
           <div className="hero-buttons">
