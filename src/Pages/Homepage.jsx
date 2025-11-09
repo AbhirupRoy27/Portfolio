@@ -5,7 +5,6 @@ function Homepage({ setActiveSection }) {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0)
 
   const skills = [
-    'Web Developer',
     'React Developer',
     'Problem Solver',
     'Quick Learner',
@@ -26,22 +25,22 @@ function Homepage({ setActiveSection }) {
 
   return (
     <main className="bg-gradient-to-r from-slate-900 to-slate-700 mb-2">
-      <div className="flex flex-col xl:flex-row justify-center items-center gap-2 sm:p-[1.5%] w-full lg:h-[92vh]">
+      <div className="flex flex-col xl:flex-row justify-center items-center gap-2 sm:p-[1.5%]">
         <div className="mt-10 w-full xl:w-[50%] px-[4%]">
-          <h1 className="text-3xl p-3 xl:text-left">
+          <h1 className="text-3xl p-3 text-center xl:text-left text-gray-50">
             Hi, I'm
             <span className="text-3xl lg:text-5xl tracking-wide px-3 text-green-600 font-bold">
               Abhirup Roy
             </span>
           </h1>
           <h1 className="flex justify-center xl:justify-start items-center py-3 px-2 text-2xl gap-2">
-            <span className="skill-prefix">I'm a </span>
+            <span className="text-white">I'm a </span>
             <span className="animated-skill font-bold ">
               {skills[currentSkillIndex]}
             </span>
           </h1>
           <p
-            className="text-xl lg:text-2xl lg:text-start my-6 text-gray-400"
+            className="text-xl lg:text-2xl text-center xl:text-start my-6 text-gray-400"
             title="About Abhirup Roy"
           >
             A passionate <b className="text-gray-200">Full stack dev</b>{' '}

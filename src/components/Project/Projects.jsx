@@ -53,10 +53,11 @@ const Projects = () => {
   )
 
   return (
-    <div className="projects-container">
-      <div className="projects-header">
-        <h1>Works Done By Me</h1>
-        <Info />
+    <div className="projects-container w-full">
+      <div className="text-center w-full">
+        <h1 className="font-semibold mb-4 text-gray-300 text-3xl md:text-4xl xl:text-5xl">
+          Works Done By Me
+        </h1>
       </div>
 
       <div className="projects-main-carousel">
@@ -75,6 +76,7 @@ const Projects = () => {
           )}
         </div>
       </div>
+      <Info />
     </div>
   )
 }

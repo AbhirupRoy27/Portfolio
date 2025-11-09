@@ -1,5 +1,4 @@
 .projects-container {
-    min-height: 86vh;
     width: 100%;
     background: #0D0D0D;
     background: linear-gradient(145deg, rgba(13, 13, 13, 1) 0%, rgba(44, 22, 92, 1) 90%, rgb(55, 40, 104) 100%);
@@ -10,23 +9,7 @@
     gap: 4rem;
 }
 
-.projects-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.projects-header h1 {
-    font-size: 4rem;
-    width: 80vw;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(165deg, #3A3A3A, #7E7E7E, #C4C4C4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .projects-header p {
-    width: 80vw;
     font-size: 1.2rem;
     line-height: 1.8;
     color: #828080;
@@ -216,10 +199,6 @@
 }
 
 @media (max-width: 768px) {
-    .projects-header h1 {
-        font-size: 2.2rem;
-        margin-bottom: 1rem;
-    }
 
     .projects-header p {
         font-size: 1rem;

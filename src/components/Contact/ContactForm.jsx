@@ -9,8 +9,7 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
+    console.log(formData)
   }
 
   const handleChange = (e) => {
@@ -22,14 +21,14 @@ function ContactForm() {
   }
 
   return (
-    <div className="lg:w-1/2 px-2 md:px-4 pb-8 mb-6 lg:bg-gray-900/40 lg:rounded-2xl border-b-2 lg:border-1 hover:border-gray-500/40 transition-all duration-300">
+    <div className="lg:w-1/2 px-2 md:px-4 pb-4 mt-6 lg:bg-gray-900/40 lg:rounded-2xl lg:border-1 hover:border-gray-500/40 hover:shadow-lg shadow-gray-50/10 transition-all duration-300">
       <div className="flex  justify-center my-6 lg:mb-0">
-        <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          <span class="text-emerald-400 text-sm font-semibold ">
+          <span className="text-emerald-400 text-md font-semibold ">
             Available for hire
           </span>
         </div>

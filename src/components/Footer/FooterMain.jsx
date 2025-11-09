@@ -3,7 +3,7 @@ import { CopyrightIcon, Github, Linkedin, Mail } from 'lucide-react'
 function Footer() {
   return (
     <div className="bg-black min-h-[20vh] p-6 sm:p-10 overflow-hidden">
-      <div className="flex flex-col sm:flex-row justify-between">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0">
         <div>
           <h1
             className="text-2xl sm:text-4xl bg-gradient-to-br from-gray-100 to-slate-300 bg-clip-text text-transparent tracking-wide font-semibold"
