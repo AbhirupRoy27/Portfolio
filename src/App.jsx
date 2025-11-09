@@ -7,9 +7,9 @@ import Navlinks from './db/navlinks.json'
 import Homepage from './Pages/Homepage'
 import './App.css'
 import Footer from './components/Footer/FooterMain'
+import Contact from './components/Contact/Contact'
 
 const NavLogos = lazy(() => import('./components/NavLogos/index'))
-const Contact = lazy(() => import('./components/Contact/Contact'))
 
 function App() {
   const [navOpen, setNavOpen] = useState(false)
@@ -25,11 +25,9 @@ function App() {
     switch (activeSection) {
       case 'contact':
         return (
-          <Suspense fallback={<h1 className="p-1">Loading...</h1>}>
-            <div className="flex justify-center items-center mb-20 lg:mb-40">
-              <Contact />
-            </div>
-          </Suspense>
+          <div className="flex justify-center items-center">
+            <Contact />
+          </div>
         )
       case 'recent-work':
         return <RecentWork />

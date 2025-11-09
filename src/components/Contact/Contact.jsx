@@ -1,79 +1,73 @@
-import { useState } from 'react'
+import { Github, Linkedin, Mail } from 'lucide-react'
+import ContactForm from './ContactForm'
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    message: '',
-  })
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-  }
-
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }))
-  }
-
   return (
-    <section className="px-[1rem] py-[2rem] bg-[#333] sm:bg-[#101010] flex flex-col justify-around items-center sm:max-w-[60%] mt-15">
-      <h1 className="text-2xl sm:text-4xl tracking-wide px-2 py-[2rem] font-bold">
-        Have a project in mind?
-      </h1>
-      <p className="mb-[1.5rem] sm:mb-[3rem] text-[#888] max-w-600 text-md sm:text-xl sm:pl-[1rem] sm:pr-[1rem]">
-        <b className="text-white tracking-wide">Let's Get In Touch </b>
-        I'm always excited to collaborate on innovative web solutions. Whether
-        you need a modern website, a complex web application, or just want to
-        say hello - drop me a message below!
-      </p>
-
-      <form
-        className="w-full sm:max-w-[500px] flex flex-col gap-3"
-        onSubmit={handleSubmit}
-      >
-        <div className="flex flex-col text-left gap-1">
-          <label htmlFor="email" className="text-white text-md">
-            Email / Mobile
-          </label>
-          <input
-            className={`bg-gray-300 focus:bg-white text-black ${
-              formData.email && 'bg-white'
-            } p-2 rounded focus:shadow-xl focus:shadow-white/10 tracking-wide`}
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Please enter your email/mobile"
-            required
-          />
+    <div className="flex flex-col py-4">
+      <section className="py-4 bg-[#101010] flex flex-col-reverse lg:flex-row items-center gap-4 lg:px-2">
+        <div className="w-full lg:w-1/2 space-y-4 px-2 md:px-4 lg:px-10 ">
+          <div class="w-full bg-linear-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-lg border border-purple-500/20 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 bg-linear-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">
+                <Github />
+              </div>
+              <div>
+                <h3 class="text-white font-bold text-lg">GitHub</h3>
+                <p class="text-slate-400 text-sm">Check out my code</p>
+              </div>
+            </div>
+            <a
+              href="#"
+              target="_blank"
+              class="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
+            >
+              View repositories
+              <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="w-full bg-linear-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/50 transition-all duration-300">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 bg-linear-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center">
+                <Mail />
+              </div>
+              <div>
+                <h3 class="text-white font-bold text-lg">Email</h3>
+                <p class="text-slate-400 text-sm">your.email@example.com</p>
+              </div>
+            </div>
+            <a
+              href="mailto:your.email@example.com"
+              class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
+            >
+              Send me an email
+              <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="w-full bg-linear-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-lg border border-blue-500/20 rounded-2xl p-6 hover:border-blue-400/50 transition-all duration-300">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 bg-linear-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                <Linkedin />
+              </div>
+              <div>
+                <h3 class="text-white font-bold text-lg">LinkedIn</h3>
+                <p class="text-slate-400 text-sm">
+                  Connect with me professionally
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://www.linkedin.com/in/abhirup-roy-60ab95225/"
+              target="_blank"
+              class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              View my profile
+              <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          placeholder="Enter your message"
-          required
-          rows={6}
-          className={`bg-gray-300 focus:bg-white text-black ${
-            formData.message && 'bg-white'
-          } p-2 rounded focus:shadow-xl focus:shadow-white/10 resize-y tracking-wide min-h-[12%] w-full`}
-        />
-
-        <button
-          type="submit"
-          className="bg-[#4BB543] text-white p-2 rounded text-lg font-semibold tracking-wide ease-in cursor-pointer hover:bg-[#3d9235] hover:shadow-xl active:shadow-[#7cdd67a5]/25 active:scale-102"
-        >
-          Submit
-        </button>
-      </form>
-    </section>
+        <ContactForm />
+      </section>
+    </div>
   )
 }
 
