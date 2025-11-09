@@ -2,7 +2,7 @@ import { useState, lazy, Suspense } from 'react'
 import TechStack from './components/TechStack/TechStack'
 import RecentWork from './components/Recentwork/RecentWork'
 import Skills from './components/Skills/Skills'
-import Projects from './components/Project/Projects'
+// import Projects from './components/Project/Projects'
 import Navlinks from './db/navlinks.json'
 import Homepage from './Pages/Homepage'
 import './App.css'
@@ -33,8 +33,8 @@ function App() {
         return <RecentWork />
       case 'skills':
         return <Skills />
-      case 'Projects':
-        return <Projects />
+      // case 'Projects':
+      //   return <Projects />
       case 'home':
       default:
         return (
