@@ -86,10 +86,6 @@
 
 .animated-skill {
   display: inline-block;
-  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   position: relative;
   animation: skillFade 4.2s infinite;
 }

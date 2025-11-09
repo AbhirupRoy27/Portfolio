@@ -1,3 +1,4 @@
+import { GitCommit, Github, GithubIcon, LucideGithub } from 'lucide-react'
 import './RecentWork.css'
 
 const RecentWork = () => {
@@ -51,6 +52,20 @@ const RecentWork = () => {
             <p className="work-description">{work.description}</p>
           </div>
         ))}
+      </div>
+      <div className="mt-12 text-center">
+        <a
+          href="https://github.com/yourusername"
+          target="_blank"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-[#161B22] border border-[#30363D] text-[#E6E6E6] rounded-lg hover:border-[#06B6D4] hover:text-[#06B6D4] transition-colors duration-200 text-base font-semibold"
+        >
+          <Github />
+          View All Projects on GitHub
+          <i
+            className="fa-regular fa-arrow-right text-sm"
+            aria-hidden="true"
+          ></i>
+        </a>
       </div>
     </section>
   )

@@ -1,4 +1,12 @@
-import { Check, LaptopMinimalCheck } from 'lucide-react'
+import {
+  Check,
+  FolderCode,
+  FolderCodeIcon,
+  LaptopMinimalCheck,
+  MonitorCog,
+  User2Icon,
+  UserCircle,
+} from 'lucide-react'
 
 const Overview = () => {
   return (
@@ -22,10 +30,7 @@ const Overview = () => {
         {/* <!-- Section Header --> */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-linear-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 backdrop-blur-sm mb-6">
-            <i
-              className="fa-solid fa-code text-blue-400"
-              aria-hidden="true"
-            ></i>
+            <UserCircle color="white" />
             <span className="text-blue-300 font-semibold">About Me</span>
           </div>
           <h2 className="text-4xl lg:text-6xl font-black text-white mb-6">
@@ -50,10 +55,7 @@ const Overview = () => {
               <div className="relative space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center shrink-0">
-                    <i
-                      className="fa-solid fa-user text-white text-2xl"
-                      aria-hidden="true"
-                    ></i>
+                    <User2Icon size={30} />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">
@@ -62,8 +64,9 @@ const Overview = () => {
                     <p className="text-slate-400 leading-relaxed">
                       I'm a full-stack developer passionate about crafting
                       exceptional digital experiences. Building production
-                      systems, I specialize in React, Node.js, MongoDB, and
-                      Tailwind CSS for a Mobile-first applications.
+                      systems, I specialize in the MERN stack (MongoDB, Express,
+                      React, Node.js) and have extensive experience with modern
+                      development practices including CI/CD, testing.
                     </p>
                   </div>
                 </div>
@@ -91,10 +94,7 @@ const Overview = () => {
               <div className="relative">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-linear-to-br from-purple-500 to-pink-600 flex items-center justify-center">
-                    <i
-                      className="fa-solid fa-lightbulb text-white text-xl"
-                      aria-hidden="true"
-                    ></i>
+                    <FolderCodeIcon strokeWidth={1.25} size={35} />
                   </div>
                   <h3 className="text-xl font-bold text-white">
                     Development Philosophy
@@ -102,21 +102,21 @@ const Overview = () => {
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3 text-slate-300">
-                    <Check size={16} strokeWidth={3} />
+                    <Check size={16} strokeWidth={3} color="#51da16" />
                     <span>
                       Clean, maintainable, and scalable code architecture
                     </span>
                   </li>
                   <li className="flex items-center gap-3 text-slate-300">
-                    <Check size={16} strokeWidth={3} />
+                    <Check size={16} strokeWidth={3} color="#51da16" />
                     <span>Performance optimization and best practices</span>
                   </li>
                   <li className="flex items-center gap-3 text-slate-300">
-                    <Check size={16} strokeWidth={3} />
+                    <Check size={16} strokeWidth={3} color="#51da16" />
                     <span>Comprehensive testing and documentation</span>
                   </li>
                   <li className="flex items-center gap-3 text-slate-300">
-                    <Check size={16} strokeWidth={3} />
+                    <Check size={16} strokeWidth={3} color="#51da16" />
                     <span>Agile methodology and continuous delivery</span>
                   </li>
                 </ul>
@@ -158,7 +158,7 @@ const Overview = () => {
             </div>
 
             {/* <!-- Competency 2 --> */}
-            <div className="group relative p-8 rounded-3xl bg-linear-to-br from-purple-500/10 to-pink-500/5 backdrop-blur-xl border border-purple-500/20 hover:border-purple-400/50 transition-all duration-500 hover:scale-[1.02]">
+            {/* <div className="group relative p-8 rounded-3xl bg-linear-to-br from-purple-500/10 to-pink-500/5 backdrop-blur-xl border border-purple-500/20 hover:border-purple-400/50 transition-all duration-500 hover:scale-[1.02]">
               <div className="absolute top-8 right-8 text-6xl text-purple-500/10 font-black group-hover:text-purple-500/20 transition-colors">
                 02
               </div>
@@ -188,19 +188,17 @@ const Overview = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* <!-- Competency 3 --> */}
             <div className="group relative p-8 rounded-3xl bg-linear-to-br from-green-500/10 to-emerald-500/5 backdrop-blur-xl border border-green-500/20 hover:border-green-400/50 transition-all duration-500 hover:scale-[1.02]">
               <div className="absolute top-8 right-8 text-6xl text-green-500/10 font-black group-hover:text-green-500/20 transition-colors">
-                03
+                {/* 03 */}
+                02
               </div>
               <div className="relative">
                 <div className="w-16 h-16 rounded-2xl bg-linear-to-br from-green-500 to-emerald-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <i
-                    className="fa-solid fa-rocket text-white text-2xl"
-                    aria-hidden="true"
-                  ></i>
+                  <MonitorCog strokeWidth={1.5} size={40} />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3">
                   Performance Optimization
