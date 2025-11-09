@@ -4,3 +4,7 @@ body {
   background: #101010;
   font-family: 'Inter', Arial, sans-serif;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}

@@ -2,12 +2,12 @@ import { useState, lazy, Suspense } from 'react'
 import TechStack from './components/TechStack/TechStack'
 import RecentWork from './components/Recentwork/RecentWork'
 import Skills from './components/Skills/Skills'
-import Projects from './components/Project/Projects'
 import Navlinks from './db/navlinks.json'
 import Homepage from './Pages/Homepage'
 import './App.css'
 import Footer from './components/Footer/FooterMain'
 import Contact from './components/Contact/Contact'
+import Overview from './Pages/Overview'
 
 const NavLogos = lazy(() => import('./components/NavLogos/index'))
 
@@ -16,7 +16,6 @@ function App() {
   const [activeSection, setActiveSection] = useState('home')
 
   const handleNavLinkClick = (section) => {
-    // e.preventDefault()
     setActiveSection(section)
     setNavOpen(false)
   }
@@ -33,8 +32,6 @@ function App() {
         return <RecentWork />
       case 'skills':
         return <Skills />
-      case 'Projects':
-        return <Projects />
       case 'home':
       default:
         return (
@@ -42,9 +39,10 @@ function App() {
             <Suspense fallback={<h1 className="p-1">Loading...</h1>}>
               <Homepage setActiveSection={setActiveSection} />
             </Suspense>
-            <TechStack />
+            <Overview />
+            {/* <TechStack /> */}
             {/* <Skills /> */}
-            <div className="bg-gradient-to-br from-slate-900 to-slate-700  mt-2">
+            <div className="bg-gradient-to-br from-slate-900 to-slate-700 ">
               <RecentWork />
             </div>
           </>
