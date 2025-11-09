@@ -53,13 +53,13 @@ const Skills = () => {
       description: 'Version control and collaboration platform',
       category: 'tools',
     },
-    // {
-    //   id: 8,
-    //   name: 'Vercel',
-    //   icon: 'Vercel',
-    //   description: 'Deployment and hosting platform for web applications',
-    //   category: 'deployment'
-    // },
+    {
+      id: 8,
+      name: 'Vercel',
+      icon: 'Vercel',
+      description: 'Deployment and hosting platform for web applications',
+      category: 'deployment',
+    },
     {
       id: 9,
       name: 'Netlify',
@@ -81,13 +81,13 @@ const Skills = () => {
     //   description: 'Scoped styling for React components',
     //   category: 'styling'
     // },
-    // {
-    //   id: 12,
-    //   name: 'VS Code',
-    //   icon: 'VSCode',
-    //   description: 'Advanced code editor for web development',
-    //   category: 'tools'
-    // },
+    {
+      id: 12,
+      name: 'VS Code',
+      icon: 'VSCode',
+      description: 'Advanced code editor for web development',
+      category: 'tools',
+    },
     {
       id: 13,
       name: 'Git',
