@@ -7,6 +7,7 @@ import Homepage from './Pages/Homepage'
 import './App.css'
 import Footer from './components/Footer/FooterMain'
 import Contact from './components/Contact/Contact'
+import Overview from './Pages/Overview'
 
 const NavLogos = lazy(() => import('./components/NavLogos/index'))
 
@@ -38,9 +39,10 @@ function App() {
             <Suspense fallback={<h1 className="p-1">Loading...</h1>}>
               <Homepage setActiveSection={setActiveSection} />
             </Suspense>
-            <TechStack />
+            <Overview />
+            {/* <TechStack /> */}
             {/* <Skills /> */}
-            <div className="bg-gradient-to-br from-slate-900 to-slate-700  mt-2">
+            <div className="bg-gradient-to-br from-slate-900 to-slate-700 ">
               <RecentWork />
             </div>
           </>
