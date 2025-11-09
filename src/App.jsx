@@ -6,8 +6,8 @@ import Projects from './components/Project/Projects'
 import Navlinks from './db/navlinks.json'
 import Homepage from './Pages/Homepage'
 import './App.css'
+import Footer from './components/Footer/FooterMain'
 
-const Footer = lazy(() => import('./components/Footer/index'))
 const NavLogos = lazy(() => import('./components/NavLogos/index'))
 const Contact = lazy(() => import('./components/Contact/Contact'))
 
@@ -55,7 +55,7 @@ function App() {
   }
 
   return (
-    <div className=" bg-[#101010] flex flex-col">
+    <div className=" bg-[#101010] flex flex-col min-w-[354px]">
       <nav className="navbar bg-[#232323] sticky p[1%] top-0 left-0 z-[100] flex justify-center items-center">
         <div className="navbar-content w-full flex items-center">
           <div
@@ -92,10 +92,7 @@ function App() {
         </Suspense>
       </nav>
       {renderActiveSection()}
-
-      <Suspense fallback={<></>}>
-        <Footer />
-      </Suspense>
+      <Footer />
     </div>
   )
 }

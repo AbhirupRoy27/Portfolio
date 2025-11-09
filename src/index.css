@@ -1,19 +1,6 @@
 @import 'tailwindcss';
 
-/* Root and Body Styles */
-#root {
-  width: 100vw;
-  max-width: 100vw;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  min-width: 320px;
-}
-
 body {
   background: #101010;
-  color: #fff;
   font-family: 'Inter', Arial, sans-serif;
 }
