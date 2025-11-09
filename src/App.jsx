@@ -40,9 +40,12 @@ function App() {
               <Homepage setActiveSection={setActiveSection} />
             </Suspense>
             <Overview />
-            {/* <TechStack /> */}
+            <TechStack />
             {/* <Skills /> */}
-            <div className="bg-gradient-to-br from-slate-900 to-slate-700 ">
+            <div
+              className="bg-gradient-to-br from-slate-900 to-slate-700"
+              id="work"
+            >
               <RecentWork />
             </div>
           </>

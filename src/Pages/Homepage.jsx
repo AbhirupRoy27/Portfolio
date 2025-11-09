@@ -21,7 +21,7 @@ function Homepage({ setActiveSection }) {
   }, [skills.length])
 
   const handleHeroButtonClick = () => {
-    setActiveSection('contact')
+    setActiveSection('recent-work')
   }
 
   return (
