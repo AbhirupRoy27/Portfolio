@@ -1,71 +1,78 @@
+import { Copy, Github, Linkedin, Mail } from 'lucide-react'
+import { useState } from 'react'
+
 function NavLogos() {
+  const [copied, setCopied] = useState(false)
+  const email = 'rabhirup605@gmail.com'
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(email)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000) // reset after 2s
+    } catch (err) {
+      console.error('Failed to copy email:', err)
+    }
+  }
+
   return (
-    <div className="nav-socials p-2 mr-4">
-      <a
-        href="https://www.linkedin.com/in/abhirup-roy-60ab95225/"
-        aria-label="LinkedIn"
-        className="nav-icon"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+    <div className="w-full px-4 lg:mt-10">
+      <span className="hidden lg:block text-md font-thin uppercase text-white/30 pl-2">
+        connect
+      </span>
+      <div className="flex lg:flex-col justify-end lg:justify-start w-full py-2 gap-4">
+        <a
+          href="https://www.linkedin.com/in/abhirup-roy-60ab95225/"
+          aria-label="LinkedIn"
+          className="p-2 flex items-center gap-2 hover:bg-[#2a2a2a] rounded-lg border-1 border-[#232323] hover:border-[#4BB543] text-white transition-all duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-          <rect x="2" y="9" width="4" height="12"></rect>
-          <circle cx="4" cy="4" r="2"></circle>
-        </svg>
-      </a>
-      <a
-        href="https://github.com/AbhirupRoy27"
-        aria-label="GitHub"
-        className="nav-icon"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          <Linkedin strokeWidth={1} color="white" />
+          <span className="hidden lg:block text-xl font-bold">LinkedIn</span>
+        </a>
+        <a
+          href="https://github.com/AbhirupRoy27"
+          aria-label="GitHub"
+          className="p-2 flex items-center gap-2 hover:bg-[#2a2a2a] rounded-lg border-1 border-[#232323] hover:border-[#4BB543] text-white transition-all duration-200 "
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-        </svg>
-      </a>
-      <a
-        href="mailto:rabhirup605@gmail.com"
-        aria-label="Mail"
-        className="nav-icon"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg
-          xmlns="https://www.svgrepo.com/show/502648/email.svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          <Github strokeWidth={1} color="white" />
+          <span className="hidden lg:block text-xl font-bold">Github</span>
+        </a>
+        <button
+          onClick={handleCopy}
+          aria-label="Copy Email"
+          className="py-1 px-3 lg:hidden flex items-center gap-2 bg-[#2a2a2a] active:scale-95 rounded-lg text-white transition-all duration-200"
         >
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-      </a>
+          <Copy strokeWidth={1} size={18} />
+          <span className="flex gap-2 text-md">
+            {copied ? 'Copied!' : 'E-Mail'}
+          </span>
+        </button>
+        <button
+          onClick={() => window.open('mailto:rabhirup605@gmail.com', '_blank')}
+          aria-label="Mail"
+          className="p-2 hidden lg:flex justify-between items-center gap-2 hover:bg-[#2a2a2a] rounded-lg border-1 border-[#232323] hover:border-[#4BB543] text-white  transition-all duration-200"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Mail strokeWidth={1} />
+          <span className="flex gap-2 text-xl font-bold">E-Mail</span>
+          <span
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation()
+              handleCopy()
+            }}
+            aria-label="Copy Email"
+            className="flex items-center gap-1 bg-black/20 p-2 rounded"
+          >
+            <Copy size={15} /> {copied ? 'Copied!' : 'Copy'}
+          </span>
+        </button>
+      </div>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import ContactForm from './ContactForm'
 
 const Contact = () => {
   return (
-    <div className="flex flex-col py-4">
+    <div className="animate-slide-in-up  flex flex-col py-4">
       <section className="py-4 bg-[#101010] flex flex-col lg:flex-row-reverse items-center lg:px-6 xl:px-15">
         <div className="w-full lg:w-1/2 space-y-4 px-2 md:px-4 lg:px-10">
           <div className="w-full bg-linear-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/50 transition-all duration-300">

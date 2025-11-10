@@ -136,7 +136,7 @@ const Skills = () => {
       : skills.filter((skill) => skill.category === activeCategory)
 
   return (
-    <section className="skills-section">
+    <section className="animate-slide-in-up  skills-section">
       <h1 className="skills-title">What I Bring to the Table</h1>
       <p className="skills-subtitle">
         Uncover the comprehensive skill set of my frontend development. From

@@ -5,6 +5,23 @@ body {
   font-family: 'Inter', Arial, sans-serif;
 }
 
-body::-webkit-scrollbar {
+#main::-webkit-scrollbar {
   display: none;
+}
+
+@keyframes slide-in-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Custom animation utility */
+.animate-slide-in-up {
+  animation: slide-in-up 0.8s ease-out forwards;
 }

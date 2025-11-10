@@ -1,6 +1,5 @@
 import {
   Check,
-  FolderCode,
   FolderCodeIcon,
   LaptopMinimalCheck,
   MonitorCog,
@@ -10,7 +9,7 @@ import {
 
 const Overview = () => {
   return (
-    <section className="code-section relative py-32 bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden min-w-[354px]">
+    <section className="relative py-32 bg-linear-to-br from-slate-950 via-slate-900 to-slate-950  min-w-[354px]">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* <!-- Section Header --> */}
         <div className="text-center mb-20">

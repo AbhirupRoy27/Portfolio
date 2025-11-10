@@ -43,8 +43,8 @@ function Homepage({ setActiveSection }) {
           <div className="border-b-1 pb-8 border-gray-300/20">
             <h1 className="text-3xl p-3 xl:text-left text-gray-50 flex flex-col lg:flex-row justify-center items-center lg:items-start xl:justify-start ">
               Hi, I'm
-              <span className="text-5xl lg:text-6xl tracking-wide px-3 text-green-600 font-bold">
-                Abhirup Roy
+              <span className="text-4xl lg:text-5xl px-3 text-green-600 font-semibold font-mono">
+                Abhirup Roy.
               </span>
             </h1>
             <h1 className="flex justify-center xl:justify-start items-center py-3 px-2 text-2xl gap-2">

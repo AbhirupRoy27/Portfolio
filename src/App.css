@@ -222,7 +222,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
   .navbar {
     min-height: 60px;
   }
@@ -234,15 +234,14 @@
   .nav-links {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 52px;
     left: 0;
-    width: 100%;
     background: #232323;
     flex-direction: column;
     gap: 0;
     height: auto;
     padding: 0.3rem;
-    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18);
+    /* box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18); */
   }
 
   .nav-links.open {
@@ -321,6 +320,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2px;
   }
 
   .nav-icon svg {
