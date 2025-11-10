@@ -11,21 +11,6 @@ import {
 const Overview = () => {
   return (
     <section className="code-section relative py-32 bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden min-w-[354px]">
-      {/* <!-- Background Effects --> */}
-      <div className="absolute inset-0">
-        <div
-          className="absolute inset-0 opacity-10"
-          data-media='{"id":"2166890616","src":"iStock","type":"image"}'
-          alt="Fantastic mountain scenery and glowing neon blue panel. Sci-Fi landscape, on mountain horizon blue-purple sky,wallpaper.3D render"
-        >
-          <img
-            src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4f99e191-79bb-4ae0-c220-d37a13d8cf00/public"
-            alt="Fantastic mountain scenery and glowing neon blue panel. Sci-Fi landscape, on mountain horizon blue-purple sky,wallpaper.3D render"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* <!-- Section Header --> */}
         <div className="text-center mb-20">

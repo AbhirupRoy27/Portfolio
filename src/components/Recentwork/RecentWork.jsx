@@ -1,55 +1,53 @@
-import { GitCommit, Github, GithubIcon, LucideGithub } from 'lucide-react'
-import './RecentWork.css'
+import { Github } from 'lucide-react'
+import works from '../../db/recentWork.json'
 
 const RecentWork = () => {
-  const works = [
-    {
-      id: 1,
-      image:
-        'https://res.cloudinary.com/ddu1fpkrw/image/upload/v1761577912/Next_gen_beykr5.png',
-      title: 'NextGen: E-commerce App',
-      description:
-        'A modern E-commerce Store app build with React and node.js framworks, Mobile first design with tailwind CSS for an clean UI. state managemant using Context API ',
-      link: 'https://abhisecomnew.netlify.app/',
-      target: '_blank',
-    },
-    {
-      id: 2,
-      image: '/DTH-View.png',
-      title: 'DTH Recharge Application',
-      description:
-        'A DTH Recharge Application interface built with React. It allows users to recharge their DTH accounts and view their transaction history.',
-      link: 'https://dthbro.netlify.app/',
-      target: '_blank',
-    },
-  ]
-
   return (
-    <section className="recent-work-section">
-      <h1 className="recent-work-title">Recent Work</h1>
-      <p className="recent-work-subtitle">
-        Continuously enhancing my knowledge with every passing moment.
-      </p>
-      <p className="recent-work-description">
-        Passionate developer with a strong drive for problem-solving and
-        building impactful solutions. A quick learner who thrives on new
-        challenges and continuously seeks opportunities to grow.
-      </p>
+    <section className="py-20 bg-[#090909ec]">
+      <div className="flex flex-col items-center">
+        <h1 className="text-4xl font-bold text-gray-300 mb-6 tracking-wide border-b-1 border-gray-50/30">
+          Recent Works
+        </h1>
+        <div className="text-xl text-gray-100 text-center mb-4 px-4 lg:px-20 ">
+          <p>Continuously enhancing my knowledge with every passing moment.</p>
+          <p className="">
+            Passionate developer with a strong drive for problem-solving and
+            building impactful solutions. A quick learner who thrives on new
+            challenges and continuously seeks opportunities to grow.
+          </p>
+        </div>
+      </div>
 
-      <div className="work-cards">
+      <div className="flex flex-col lg:flex-row gap-8 py-8 px-4 lg:px-20 cursor-pointer">
         {works.map((work) => (
-          <div key={work.id} className="work-card">
-            <div className="work-image-container">
+          <div
+            key={work.id}
+            className="w-full h-full lg:w-1/3 hover:scale-105 transition-all duration-300 shadow-lg rounded-2xl shadow-gray-50/30"
+          >
+            <div className="h-2/3">
               <a
                 href={work.link}
                 target={work.target}
                 rel="noopener noreferrer"
               >
-                <img src={work.image} alt={work.title} className="work-image" />
+                <img
+                  src={work.image}
+                  alt={work.title}
+                  className="rounded-tl-2xl rounded-tr-2xl object-cover w-full h-full bg-gray-800/90"
+                />
               </a>
             </div>
-            <h2 className="work-title">{work.title}</h2>
-            <p className="work-description">{work.description}</p>
+            <div
+              className="bg-gray-200 px-5 py-3 rounded-bl-2xl rounded-br-2xl h-1/3"
+              onClick={() => window.open(work.link, '_blank')}
+            >
+              <h2 className="text-2xl font-semibold line-clamp-1 hover:underline">
+                {work.title}
+              </h2>
+              <p className="text-gray-800/50 line-clamp-2">
+                {work.description}
+              </p>
+            </div>
           </div>
         ))}
       </div>

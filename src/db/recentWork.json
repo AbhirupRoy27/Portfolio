@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "https://res.cloudinary.com/ddu1fpkrw/image/upload/v1761577912/Next_gen_beykr5.png",
+    "title": "NextGen: E-commerce App",
+    "description": "A modern E-commerce Store app build with React and node.js framworks, Mobile first design with tailwind CSS for an clean UI. state managemant using Context API ",
+    "link": "https://abhisecomnew.netlify.app/",
+    "target": "_blank"
+  },
+  {
+    "id": 2,
+    "image": "https://res.cloudinary.com/ddu1fpkrw/image/upload/v1762749978/ESM_mfgklq.png",
+    "title": "EMS-Employee Mangement Sysytem",
+    "description": "A DTH Recharge Application interface built with React. It allows users to recharge their DTH accounts and view their transaction history.",
+    "link": "https://worksync-emp.netlify.app/employee-dashboard",
+    "target": "_blank"
+  },
+  {
+    "id": 3,
+    "image": "/DTH-View.png",
+    "title": "DTH Recharge Application",
+    "description": "A DTH Recharge Application interface built with React. It allows users to recharge their DTH accounts and view their transaction history.",
+    "link": "https://dthbro.netlify.app/",
+    "target": "_blank"
+  }
+]

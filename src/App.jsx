@@ -18,6 +18,7 @@ function App() {
   const handleNavLinkClick = (section) => {
     setActiveSection(section)
     setNavOpen(false)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const renderActiveSection = () => {
@@ -40,14 +41,13 @@ function App() {
               <Homepage setActiveSection={setActiveSection} />
             </Suspense>
             <Overview />
-            <TechStack />
-            {/* <Skills /> */}
-            <div
-              className="bg-gradient-to-br from-slate-900 to-slate-700"
-              id="work"
-            >
+            <div id="work">
               <RecentWork />
             </div>
+
+            <TechStack />
+
+            {/* <Skills /> */}
           </>
         )
     }

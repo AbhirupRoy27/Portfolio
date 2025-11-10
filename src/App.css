@@ -188,11 +188,6 @@
   transition: color 0.3s ease;
 }
 
-/* Recent Work Background */
-.recent-work-bg {
-  height: 900px;
-}
-
 
 @media (max-width: 1280px) {
   .hero-buttons {

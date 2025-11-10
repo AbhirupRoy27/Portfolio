@@ -25,7 +25,7 @@ function Homepage({ setActiveSection }) {
   }
 
   return (
-    <main className="bg-gradient-to-r from-slate-900 to-slate-700 min-h-[90vh] flex justify-center items-center">
+    <main className="bg-[#0D1117] flex justify-center items-center">
       <div className="flex flex-col xl:flex-row justify-center items-center gap-2 sm:p-[1.5%]">
         <div className="mt-10 w-full xl:w-2/3 px-[4%]">
           <div className="flex justify-center items-center xl:justify-start">
@@ -64,20 +64,20 @@ function Homepage({ setActiveSection }) {
               . Building scalable, production-ready applications with clean
               architecture.
             </p>
-            <div className="hero-buttons">
+            <div className="flex gap-4 justify-center xl:justify-start">
               <button
                 onClick={handleHeroButtonClick}
-                className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105"
+                className="group relative px-4 sm:px-6 lg:px-8 py-4 bg-gradient-to-r from-slate-300 to-slate-500 text-gray-950 hover:text-white font-semibold rounded-xl overflow-hidden hover:shadow-xl hover:shadow-gray-500/50 transition-all duration-300 hover:scale-105"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   View My Work
                   <ArrowBigRight />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-900 to-slate-700  opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               <button
                 onClick={handleDownloadCV}
-                className="group px-8 py-2 bg-white/5 backdrop-blur-md border border-white/10 text-slate-300 font-semibold rounded-xl hover:bg-white/10 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105 flex items-center gap-2"
+                className="group px-4 sm:px-6 lg:px-8 py-2 bg-white/5 backdrop-blur-md border border-white/10 text-slate-300 font-semibold rounded-xl hover:bg-white/10 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105 flex items-center sm:gap-2"
               >
                 <Download />
                 Download Resume
