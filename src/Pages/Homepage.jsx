@@ -53,7 +53,7 @@ function Homepage({ setActiveSection }) {
                 {skills[currentSkillIndex]}
               </span>
             </h1>
-            <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed text-center xl:text-start">
+            <p className="text-xl text-slate-300 mb-12 max-w-3xl leading-relaxed text-center xl:text-start">
               Specializing in{' '}
               <span className="text-cyan-400 font-semibold">React</span>,
               <span className="text-blue-400 font-semibold">{` `}Node.js</span>,
@@ -64,20 +64,19 @@ function Homepage({ setActiveSection }) {
               . Building scalable, production-ready applications with clean
               architecture.
             </p>
-            <div className="flex gap-4 justify-center xl:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
               <button
                 onClick={handleHeroButtonClick}
-                className="group relative px-4 sm:px-6 lg:px-8 py-4 bg-gradient-to-r from-slate-300 to-slate-500 text-gray-950 hover:text-white font-semibold rounded-xl overflow-hidden hover:shadow-xl hover:shadow-gray-500/50 transition-all duration-300 hover:scale-105"
+                className="group relative px-4 sm:px-6 py-3 bg-gradient-to-r from-slate-300 to-slate-500 text-gray-950 hover:text-white font-semibold rounded-xl overflow-hidden hover:shadow-xl hover:shadow-gray-500/50 transition-all duration-300 hover:scale-105 flex items-center  justify-center sm:justify-start"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   View My Work
                   <ArrowBigRight />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-900 to-slate-700  opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               <button
                 onClick={handleDownloadCV}
-                className="group px-4 sm:px-6 lg:px-8 py-2 bg-white/5 backdrop-blur-md border border-white/10 text-slate-300 font-semibold rounded-xl hover:bg-white/10 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105 flex items-center sm:gap-2"
+                className="group px-4 sm:px-6  py-3 bg-white/5 backdrop-blur-md border border-white/10 text-slate-300 font-semibold rounded-xl hover:bg-white/10 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105 flex items-center justify-center sm:justify-start gap-2"
               >
                 <Download />
                 Download Resume
@@ -85,9 +84,9 @@ function Homepage({ setActiveSection }) {
             </div>
           </div>
         </div>
-        <div className="flex justify-center rounded-md lg:rounded-full p-15 sm:p-4 lg:p-0 lg:hover:p-4 duration-300 w-full sm:w-[50%] lg:shadow-xl lg:shadow-white/30 lg:m-20">
+        <div className="flex rounded-full p-6 md:p-0 lg:hover:p-4 duration-300 h-100 lg:h-fit lg:w-1/3 lg:shadow-xl lg:shadow-white/30 my-10">
           <img
-            className="rounded-md lg:rounded-full lg:shadow-xl lg:shadow-black/30 "
+            className=" rounded-full lg:shadow-xl lg:shadow-black/30 "
             src="https://res.cloudinary.com/ddu1fpkrw/image/upload/v1762763628/Profile_pcqchp.png"
             alt="Profile"
             title="Photo Abhirup Roy"
