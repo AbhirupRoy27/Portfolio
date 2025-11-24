@@ -15,9 +15,11 @@ function App() {
   const [activeSection, setActiveSection] = useState('home')
 
   const handleNavLinkClick = (section) => {
+    const main = document.getElementById('main')
+    main?.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
     setActiveSection(section)
     setNavOpen(false)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const renderActiveSection = () => {
@@ -54,7 +56,7 @@ function App() {
   return (
     <div className="flex flex-col lg:flex-row">
       <div className="w-screen lg:w-1/7 min-w-[354px] lg:min-w-max border-r-1 border-gray-400/30">
-        <nav className="bg-[#232323] flex lg:flex-col flex-row  lg:justify-start items-center lg:h-screen">
+        <nav className="bg-[#232323] flex lg:flex-col flex-row lg:justify-start items-center lg:h-screen">
           <div className="flex flex-col items-center px-4">
             <div
               className={`hamburger${navOpen ? ' open' : ''} `}
@@ -108,7 +110,7 @@ function App() {
         </nav>
       </div>
       <div
-        className="animate-slide-in-up w-screen h-screen overflow-y-scroll lg:w-6/7 bg-[#101010] flex flex-col min-w-[354px]"
+        className="animate-slide-in-up w-screen lg:h-screen overflow-y-auto lg:w-6/7 bg-[#101010] flex flex-col min-w-[354px]"
         id="main"
       >
         {renderActiveSection()}

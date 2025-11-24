@@ -1,15 +1,15 @@
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
 import ContactForm from './ContactForm'
 
 const Contact = () => {
   return (
-    <div className="animate-slide-in-up  flex flex-col py-4">
+    <div className="animate-slide-in-up  flex flex-col py-10">
       <section className="py-4 bg-[#101010] flex flex-col lg:flex-row-reverse items-center lg:px-6 xl:px-15">
         <div className="w-full lg:w-1/2 space-y-4 px-2 md:px-4 lg:px-10">
-          <div className="w-full bg-linear-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/50 transition-all duration-300">
+          <div className="w-full bg-black-500/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 hover:border-white/50 transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-linear-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center">
-                <Mail />
+              <div className="w-12 h-12 bg-black shadow-md shadow-white/10 rounded-xl flex items-center justify-center">
+                <Mail color="white" />
               </div>
               <div>
                 <h3 className="text-white font-bold text-lg">Email</h3>
@@ -18,16 +18,16 @@ const Contact = () => {
             </div>
             <a
               href="mailto:your.email@example.com"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
+              className="inline-flex items-center gap-2 text-gray-400 hover:text-gray-50 transition-colors"
             >
-              Send me an email
-              <i className="fas fa-arrow-right text-sm" aria-hidden="true"></i>
+              Send me an Email
+              <ArrowRight />
             </a>
           </div>
-          <div className="w-full bg-linear-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-lg border border-blue-500/20 rounded-2xl p-6 hover:border-blue-400/50 transition-all duration-300">
+          <div className="w-full bg-black-500/10 backdrop-blur-lg border border-blue-500/20 rounded-2xl p-6 hover:border-blue-400/50 transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                <Linkedin />
+              <div className="w-12 h-12 bg-black shadow-md shadow-white/10 rounded-xl flex items-center justify-center">
+                <Linkedin color="white" />
               </div>
               <div>
                 <h3 className="text-white font-bold text-lg">LinkedIn</h3>
@@ -39,16 +39,16 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/abhirup-roy-60ab95225/"
               target="_blank"
-              className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+              className="inline-flex items-center gap-2 text-gray-400 hover:text-gray-50 transition-colors"
             >
               View my profile
-              <i className="fas fa-arrow-right text-sm" aria-hidden="true"></i>
+              <ArrowRight />
             </a>
           </div>
-          <div className="w-full bg-linear-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-lg border border-purple-500/20 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300">
+          <div className="w-full bg-black-500/10 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-300/50 transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-linear-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">
-                <Github />
+              <div className="w-12 h-12 bg-black shadow-md shadow-white/10 rounded-xl flex items-center justify-center">
+                <Github color="white" />
               </div>
               <div>
                 <h3 className="text-white font-bold text-lg">GitHub</h3>
@@ -58,10 +58,10 @@ const Contact = () => {
             <a
               href="#"
               target="_blank"
-              className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
+              className="inline-flex items-center gap-2 text-gray-400 hover:text-gray-50 transition-colors"
             >
               View repositories
-              <i className="fas fa-arrow-right text-sm" aria-hidden="true"></i>
+              <ArrowRight />
             </a>
           </div>
         </div>

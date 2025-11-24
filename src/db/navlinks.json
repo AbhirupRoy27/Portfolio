@@ -6,6 +6,12 @@
     "handle": "home"
   },
   {
+    "id": 2,
+    "link": "Blogs",
+    "path": "#",
+    "handle": "Blogs"
+  },
+  {
     "id": 3,
     "link": "Skills",
     "path": "#",
