@@ -38,10 +38,10 @@ function App() {
           <div className="animate-slide-in-up">
             <Homepage setActiveSection={setActiveSection} />
 
-            <Overview />
             <div id="work">
               <RecentWork />
             </div>
+            <Overview />
 
             <TechStack />
 

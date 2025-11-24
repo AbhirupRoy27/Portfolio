@@ -12,15 +12,15 @@ const Overview = () => {
     <section className="relative py-32 bg-linear-to-br from-slate-950 via-slate-900 to-slate-950  min-w-[354px]">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* <!-- Section Header --> */}
-        <div className="text-center mb-20">
+        {/* <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-linear-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 backdrop-blur-sm mb-6">
             <UserCircle color="white" />
             <span className="text-blue-300 font-semibold">About Me</span>
           </div>
           <h2 className="text-4xl lg:text-6xl font-black text-white mb-6">
-            Turning
-            <span className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
-              Ideas
+            Turning{' '}
+            <span className="bg-gradient-to-br from-slate-300 to-slate-100 bg-clip-text text-transparent">
+              Ideas{' '}
             </span>
             Into Reality
           </h2>
@@ -28,8 +28,7 @@ const Overview = () => {
             Production-ready code architect with expertise in scalable systems
             and modern web technologies
           </p>
-        </div>
-
+        </div> */}
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* <!-- Left: Bio & Tech Stack --> */}
           <div className="space-y-8">

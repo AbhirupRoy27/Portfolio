@@ -32,7 +32,7 @@ function Homepage({ setActiveSection }) {
   }
 
   return (
-    <main className="bg-[#0D1117] flex justify-center items-center">
+    <main className="bg-[#0D1117] flex justify-center items-center py-5 sm:py-20">
       <div className="flex flex-col xl:flex-row justify-center items-center gap-2 sm:p-[1.5%]">
         <div className="mt-10 w-full xl:w-2/3 px-[4%]">
           <div className="flex justify-center items-center xl:justify-start">
@@ -60,13 +60,13 @@ function Homepage({ setActiveSection }) {
                 {skills[currentSkillIndex]}
               </span>
             </h1>
-            <p className="text-xl text-slate-300 mb-6 sm:mb-12 max-w-3xl leading-loose text-center xl:text-start">
+            <div className="text-xl text-slate-300 mb-6 sm:mb-12 max-w-3xl leading-loose text-center xl:text-start">
               I build interactive web apps using{` `}
               <Icons_React />, <Icons_node />, <Icons_express />, and{' '}
               <Icons_mongoDb /> With a focus on UI design with{' '}
               <Icons_tailwind />. Building scalable, production-ready
               applications with clean architecture.
-            </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
               <button
                 onClick={handleHeroButtonClick}
