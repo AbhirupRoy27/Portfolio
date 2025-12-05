@@ -37,7 +37,7 @@ export function Icons_express() {
     <a
       target="_blank"
       className="inline-flex items-center text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-      href="https://nodejs.org/en"
+      href="https://expressjs.com/"
     >
       <div className="size-4 flex-shrink-0">
         <SiExpress color="white" />
@@ -52,7 +52,7 @@ export function Icons_mongoDb() {
     <a
       target="_blank"
       className="inline-flex items-center text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-      href="https://nodejs.org/en"
+      href="https://www.mongodb.com/"
     >
       <div className="size-4 flex-shrink-0">
         <SiMongodb color="green" />
