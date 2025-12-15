@@ -9,18 +9,11 @@ import Footer from './components/Footer/FooterMain'
 import Contact from './components/Contact/Contact'
 import Overview from './Pages/Overview'
 import NavLogos from './components/NavLogos/index'
+import handleNavLinkClick from './utils/handleNavLinkClick'
 
 function App() {
   const [navOpen, setNavOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
-
-  const handleNavLinkClick = (section) => {
-    const main = document.getElementById('main')
-    main?.scrollTo({ top: 0, behavior: 'smooth' })
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-    setActiveSection(section)
-    setNavOpen(false)
-  }
 
   const renderActiveSection = () => {
     switch (activeSection) {
@@ -44,10 +37,7 @@ function App() {
               <RecentWork />
             </div>
             <Overview />
-
             <TechStack />
-
-            {/* <Skills /> */}
           </div>
         )
     }
@@ -72,7 +62,9 @@ function App() {
             <div className="w-full">
               <div
                 className="hidden lg:flex py-4 px-1 gap-2"
-                onClick={() => handleNavLinkClick('home')}
+                onClick={() =>
+                  handleNavLinkClick('home', setActiveSection, setNavOpen)
+                }
               >
                 <img
                   src="https://res.cloudinary.com/ddu1fpkrw/image/upload/v1759126014/profile_ucj6m8.png"
@@ -96,7 +88,13 @@ function App() {
                   <li key={link.id} className="flex items-center">
                     <button
                       href={link.path}
-                      onClick={() => handleNavLinkClick(`${link.handle}`)}
+                      onClick={() =>
+                        handleNavLinkClick(
+                          `${link.handle}`,
+                          setActiveSection,
+                          setNavOpen
+                        )
+                      }
                       className="text-[#bdbdbd] text-xl tracking-wide py-2 px-2 duration-300 hover:scale-102 hover:text-shadow-md/30 "
                     >
                       {link.link}
