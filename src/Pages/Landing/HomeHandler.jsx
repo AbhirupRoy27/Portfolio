@@ -9,10 +9,12 @@ import Footer from '../../components/Footer/FooterMain'
 import Contact from '../../components/Contact/Contact'
 import Homepage from './IntroHome'
 import Overview from './Overview'
+import { useNavigate } from 'react-router-dom'
 
 function HomeLayout() {
   const [navOpen, setNavOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
+  const navigate = useNavigate()
 
   const renderActiveSection = () => {
     switch (activeSection) {
@@ -91,7 +93,8 @@ function HomeLayout() {
                         handleNavLinkClick(
                           `${link.handle}`,
                           setActiveSection,
-                          setNavOpen
+                          setNavOpen,
+                          navigate
                         )
                       }
                       className="text-[#bdbdbd] text-xl tracking-wide py-2 px-2 duration-300 hover:scale-102 hover:text-shadow-md/30 "
