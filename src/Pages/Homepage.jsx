@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { handleDownloadCV } from './pageUtils/handleDownload'
+import { handleDownloadCV } from '../utils/pageUtils/handleDownload'
 import { ArrowBigRight, ArrowRight, Download } from 'lucide-react'
 import {
   Icons_express,
