@@ -9,8 +9,10 @@ import {
   Vercel,
 } from '../../assets/icons/Icons2'
 import { SlGlobe } from 'react-icons/sl'
+import { useNavigate } from 'react-router-dom'
 
 const RecentWork = () => {
+  const navigate = useNavigate()
   return (
     <section className="animate-slide-in-up py-20 bg-[#090909ec]">
       <div className="flex flex-col items-center">
@@ -70,7 +72,10 @@ const RecentWork = () => {
                 </div>
               </div>
               <div className="pt-4 flex justify-end items-center">
-                <button className="flex gap-2 py-2 px-4 bg-[#161B22] border border-[#30363D] text-[#E6E6E6] rounded-lg hover:border-[#06B6D4] hover:text-[#06B6D4] transition-colors duration-200 text-base font-semibold">
+                <button
+                  className="flex gap-2 py-2 px-4 bg-[#161B22] border border-[#30363D] text-[#E6E6E6] rounded-lg hover:border-[#06B6D4] hover:text-[#06B6D4] transition-colors duration-200 text-base font-semibold"
+                  onClick={() => navigate('Project')}
+                >
                   Read More <ArrowRight />
                 </button>
               </div>
