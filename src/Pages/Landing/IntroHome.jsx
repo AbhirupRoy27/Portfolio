@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { handleDownloadCV } from '../utils/pageUtils/handleDownload'
 import { ArrowBigRight, ArrowRight, Download } from 'lucide-react'
 import {
   Icons_express,
@@ -7,7 +6,8 @@ import {
   Icons_node,
   Icons_React,
   Icons_tailwind,
-} from '../assets/icons/Icons'
+} from '../../assets/icons/Icons'
+import { handleDownloadCV } from '../../utils/pageUtils/handleDownload'
 
 function Homepage({ setActiveSection }) {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0)

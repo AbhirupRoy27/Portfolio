@@ -4,7 +4,6 @@ import {
   LaptopMinimalCheck,
   MonitorCog,
   User2Icon,
-  UserCircle,
 } from 'lucide-react'
 
 const Overview = () => {
