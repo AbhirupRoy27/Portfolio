@@ -12,6 +12,7 @@ const handleNavLinkClick = (
   window.scrollTo({ top: 0, behavior: 'smooth' })
   setActiveSection(section)
   setNavOpen(false)
+  navigate('/')
 }
 
 export default handleNavLinkClick
