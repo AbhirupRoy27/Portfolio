@@ -17,7 +17,7 @@ const Contact = () => {
               </div>
             </div>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:rabhirup605@gamil.com"
               className="inline-flex items-center gap-2 text-gray-400 hover:text-gray-50 transition-colors"
             >
               Send me an Email
@@ -56,7 +56,7 @@ const Contact = () => {
               </div>
             </div>
             <a
-              href="#"
+              href="https://github.com/AbhirupRoy27"
               target="_blank"
               className="inline-flex items-center gap-2 text-gray-400 hover:text-gray-50 transition-colors"
             >
