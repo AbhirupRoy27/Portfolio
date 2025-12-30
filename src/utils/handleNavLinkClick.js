@@ -5,7 +5,11 @@ const handleNavLinkClick = (
   navigate
 ) => {
   if (section == 'blogs' || section == 'Blogs') {
-    return navigate('blog')
+    return navigate('project')
+  }
+
+  if (section == 'Contact' || section == 'contact') {
+    return navigate('Contact')
   }
   const main = document.getElementById('main')
   main?.scrollTo({ top: 0, behavior: 'smooth' })

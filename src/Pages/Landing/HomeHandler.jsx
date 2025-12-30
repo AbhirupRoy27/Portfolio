@@ -2,7 +2,6 @@ import RecentWork from '../../components/Recentwork/RecentWork'
 import Skills from '../../components/Skills/Skills'
 import TechStack from '../../components/TechStack/TechStack'
 import Footer from '../../components/Footer/FooterMain'
-import Contact from '../../components/Contact/Contact'
 import Homepage from './IntroHome'
 import Overview from './Overview'
 import NavBar from './NavBar'
@@ -26,12 +25,6 @@ export const HomeSkeliton = () => {
   const { activeSection, setActiveSection } = useSection()
   const renderActiveSection = () => {
     switch (activeSection) {
-      case 'contact':
-        return (
-          <div className="flex justify-center items-center">
-            <Contact />
-          </div>
-        )
       case 'recent-work':
         return <RecentWork />
       case 'skills':

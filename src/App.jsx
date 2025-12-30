@@ -7,6 +7,7 @@ import Blog from './Pages/Blog/Blog'
 import LandingProject from './Pages/Project/LandingProject'
 import ProjectLanding from './Pages/Project/ProjectLanding'
 import AboutWorkSync from './Pages/Project/AboutWorkSync'
+import ContactLayout from './Pages/Contact/layout/ContactLayout'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="1" element={<AboutEcom />} />
             <Route path="2" element={<AboutWorkSync />} />
           </Route>
+          <Route path="contact" element={<ContactLayout />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
