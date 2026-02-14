@@ -34,7 +34,7 @@ function Homepage({ setActiveSection }) {
   return (
     <main className="bg-[#0D1117] flex justify-center items-center py-5 sm:py-20">
       <div className="flex flex-col xl:flex-row justify-center items-center gap-2 sm:p-[1.5%]">
-        <div className="mt-10 w-full xl:w-2/3 px-[4%]">
+        <div className="mt-10 w-full xl:w-2/3 px-[4%] sm:px-0">
           <div className="flex justify-center items-center xl:justify-start">
             <div className="inline-flex items-center gap-2 px-6 py-3 mb-3 sm:mb-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300 group">
               <span className="relative flex h-3 w-3">
@@ -60,7 +60,7 @@ function Homepage({ setActiveSection }) {
                 {skills[currentSkillIndex]}
               </span>
             </h1>
-            <div className="text-xl text-slate-300 mb-6 sm:mb-12 max-w-3xl leading-loose text-center xl:text-start">
+            <div className="text-lg sm:text-xl text-slate-300 mb-6 sm:mb-12 max-w-3xl leading-loose text-center xl:text-start">
               I build interactive web apps using{` `}
               <Icons_React />, <Icons_node />, <Icons_express />, and{' '}
               <Icons_mongoDb /> With a focus on UI design with{' '}
@@ -87,7 +87,7 @@ function Homepage({ setActiveSection }) {
             </div>
           </div>
         </div>
-        <div className="flex rounded-full p-6 md:p-0 lg:hover:p-4 duration-300 h-100 lg:h-fit lg:w-1/3 lg:shadow-xl lg:shadow-white/30 my-10">
+        <div className="flex rounded-full p-6 md:p-0 lg:hover:p-4 duration-300 h-100 lg:h-fit lg:max-w-[471px] lg:shadow-xl lg:shadow-white/30 my-10">
           <img
             className=" rounded-full lg:shadow-xl lg:shadow-black/30 "
             src="https://res.cloudinary.com/ddu1fpkrw/image/upload/v1763961226/Profile_Abhirup_yudedc.png"
