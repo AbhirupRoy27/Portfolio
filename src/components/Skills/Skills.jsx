@@ -136,13 +136,17 @@ const Skills = () => {
       : skills.filter((skill) => skill.category === activeCategory)
 
   return (
-    <section className="animate-slide-in-up  skills-section">
-      <h1 className="skills-title">What I Bring to the Table</h1>
-      <p className="skills-subtitle">
-        Uncover the comprehensive skill set of my frontend development. From
-        foundational languages like JavaScript and TypeScript to cutting-edge
-        frameworks.
-      </p>
+    <section className="animate-slide-in-up  skills-section ">
+      <h1 className="text-2xl sm:text-4xl xl:text-6xl font-extralight tracking-wider text-center border-b border-white/30 pb-4">
+        What I Bring to the Table
+      </h1>
+      <center>
+        <p className="text-md text-center tracking-wider text-gray-50/70 font-sans py-12 sm:w-[700px]">
+          Uncover the comprehensive skill set of my frontend development. From
+          foundational languages like JavaScript and TypeScript to cutting-edge
+          frameworks.
+        </p>
+      </center>
 
       <div
         className="category-filters"
@@ -166,7 +170,7 @@ const Skills = () => {
       </div>
 
       <div
-        className="skills-grid "
+        className="skills-grid min-h-[50vh]"
         role="tabpanel"
         id={`${activeCategory}-panel`}
         aria-label={`${activeCategory} skills`}
@@ -176,7 +180,7 @@ const Skills = () => {
           return (
             <div
               key={skill.id}
-              className="skill-card"
+              className="skill-card max-h-[245px]"
               role="article"
               aria-labelledby={`skill-name-${skill.id}`}
             >
